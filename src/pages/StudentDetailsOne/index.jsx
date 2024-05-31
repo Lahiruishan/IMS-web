@@ -5,6 +5,7 @@ import {createColumnHelper} from "@tanstack/react-table";
 import React from "react";
 import IMA from "../../components/IMA";
 
+// dummy data
 const table2Data = [
     {day: "Monday",rowclass:"H1" ,teacher: "xxxxx"},
     {day: "Monday",rowclass:"H1" ,teacher: "xxxxx"},

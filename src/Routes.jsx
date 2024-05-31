@@ -8,7 +8,7 @@ import Payments from "pages/Payments"
 import PaymentsStudents from "pages/PaymentsStudents"
 import PaymentsTeachers from "pages/PaymentsTeachers";
 import StudentDetails from "pages/StudentDetails";
-import StudentDetailsOne from "pages/StudentDeatailsOne";
+import StudentDetailsOne from "pages/StudentDetailsOne";
 import StudentDetailsTwo from "pages/StudentDetailsTwo";
 import StudentDetailsThree from "pages/StudentDetailsThree";
 import TeachersOne from "pages/TeachersOne";

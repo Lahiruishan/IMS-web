@@ -25,7 +25,7 @@ const Home = () => {
           <Link to="PaymentsTeachers" style={{ color: "#87CEFA", textDecoration: "none" }}>PaymentsTeachers</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="StudentDeatailsOne" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDeatailsOne</Link>
+          <Link to="StudentDetailsOne" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDetailsOne</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
           <Link to="StudentDetails" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDetails</Link>
