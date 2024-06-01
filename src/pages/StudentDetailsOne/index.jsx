@@ -44,17 +44,20 @@ export default function StudentDetailsOne(){
                 ),
                 header: (info) =>(
                     <div className="flex py-2 pr-2 md:p-5 sm:flex-col">
-                        <div className="flex w-L[44%] flex-wrap justify-betweeb gap-5 sm:w-full">
-                            <Text as = "p" className="tracking-[0.10px] ! text-white-A700">
-                                Hall Number
-                            </Text>
-                            <Text as = "p" className="tracking-[0.10px] ! text-white-A700">
-                                Time 
-                            </Text>
+                        <div className="flex w-L[44%] flex-wrap justify-between gap-5 sm:w-full">
+                        <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Hall Number</Text>
+
+                         
+                            <div className="flex w-L[44%] flex-wrap justify-between gap-5 sm:w-full">
+                        <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Time</Text>
+
+                         
+                            <div className="flex w-L[44%] flex-wrap justify-between gap-5 sm:w-full">
+                            <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Class</Text>
+
                         </div>
-                        <Text as = "p" className="mr-[218px] tracking-[0.10px] !text-A700 sm:mr-0">
-                            Class
-                        </Text>
+                    </div>
+                    </div>
                     </div>
                 ),
                 meta: {width: "709px"},
