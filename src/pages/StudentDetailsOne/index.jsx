@@ -6,9 +6,13 @@ import React from "react";
 import IMA from "../../components/IMA";
 
 // dummy data
+
+
 const table2Data = [
-    {day: "Monday",rowclass:"H1" ,teacher: "xxxxx"},
-    {day: "Monday",rowclass:"H1" ,teacher: "xxxxx"},
+    {day: "Monday",Hnumber:"H1",time:"7.00 a.m-1.00p.m", class:"Chemistry-Theory- 2024 A/L" , teacher: "Teacher A"},
+    {day: "Monday",Hnumber:"H2" ,time:"8.00 a.m-2.00p.m", class:"Chemistry-Theory- 2025 A/L", teacher: "Teacher B"},
+    {day: "Monday",Hnumber:"H1",time:"7.00 a.m-1.00p.m", class:"Chemistry-Theory- 2024 A/L" , teacher: "Teacher A"},
+    {day: "Monday",Hnumber:"H2" ,time:"8.00 a.m-2.00p.m", class:"Chemistry-Theory- 2025 A/L", teacher: "Teacher B"},
 
 ];
 
@@ -24,44 +28,57 @@ export default function StudentDetailsOne(){
                 ),
                 header: (info) =>(
                     <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Day</Text>
+                  
                 ),
                 meta: {width: "155px"},
             }),
-            table2ColumnHelper.accessor("rowclass",{
+
+
+
+            table2ColumnHelper.accessor("Hnumber",{
                 cell: (info) =>(
-                    <div className="flex items-end justify-between gap-5 sm:flex-col">
-                        <div className="mb-[17px] mt-[33px] flex w-[43%] flex-wrap justify-between gap-5 sm:w-full">
                             <Text as="p" className="tracking-[0.10px]">
                                 {info?.getValue?.()}
                             </Text>
-                           {/* backend part ::loop want */}
-                            <Text as="p" className="tracking-[0.10px]">07.00AM -12.00 PM </Text> 
-                        </div>
-                        <Text as = "p" className="mb-[15px] mr-[97px] tracing-[0.10px] sm:mr-0">
-                            Chemistry-Theory- 2024 A/L
-                        </Text>
-                    </div>
+                            ),
+                            header: (info) =>(
+                    <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Hall Number</Text>
+                  
+                ),
+                meta: {width: "145px"},
+            }  ),
+                            
+        ,
+            table2ColumnHelper.accessor("time",{
+                cell:(info)=>(
+                    <Text as="p" className="tracking-[0.10px]">
+                        {info?.getValue?.()}
+                    </Text>
                 ),
                 header: (info) =>(
-                    <div className="flex py-2 pr-2 md:p-5 sm:flex-col">
-                        <div className="flex w-L[44%] flex-wrap justify-between gap-5 sm:w-full">
-                        <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Hall Number</Text>
-
-                         
-                            <div className="flex w-L[44%] flex-wrap justify-between gap-5 sm:w-full">
-                        <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Time</Text>
-
-                         
-                            <div className="flex w-L[44%] flex-wrap justify-between gap-5 sm:w-full">
-                            <Text as="p" className="px-[35px] pb-1.5 pt-3 tracking-[0.10px] !text-white-A700 md:p-5 sm:px-5">Class</Text>
-
-                        </div>
-                    </div>
-                    </div>
-                    </div>
+                    <Text as="p" className="py-[9px] tracking-[0.10px] !text-white-A700 md:p-5">
+                       Time
+                    </Text>
                 ),
-                meta: {width: "709px"},
+                meta: {width:"155px"},
             }),
+
+
+            table2ColumnHelper.accessor("class",{
+                cell:(info)=>(
+                    <Text as="p" className="tracking-[0.10px]">
+                        {info?.getValue?.()}
+                    </Text>
+                ),
+                header: (info) =>(
+                    <Text as="p" className="py-[9px] tracking-[0.10px] !text-white-A700 md:p-5">
+                        Class
+                    </Text>
+                ),
+                meta: {width:"155px"},
+            }),
+
+
             table2ColumnHelper.accessor("teacher",{
                 cell:(info)=>(
                     <Text as="p" className="tracking-[0.10px]">
@@ -73,8 +90,9 @@ export default function StudentDetailsOne(){
                         Teacher
                     </Text>
                 ),
-                meta: {width:"145px"},
+                meta: {width:"155px"},
             }),
+            
         ];
     }, []);
     return (
@@ -127,7 +145,7 @@ export default function StudentDetailsOne(){
                   </div>
                   </div>
             <div className="mt -[25px] flex w-[75%] flex-col items-start gap-[73px] md:w-full md:gap-[54px] sm:gap-9">
-                <Heading size="11xl" as ="h3" className="ml-[321px] md:ml-0">
+                <Heading size="lg" as ="h3" className="ml-[321px] md:ml-0">
                     Time Table
                 </Heading>
                 <ReactTable 
@@ -140,7 +158,9 @@ export default function StudentDetailsOne(){
                 data = {table2Data}
                 />
 
-                <Button color = "indigo_900" size="md" shape="square" className="ml-[905px] w-full font-bold md:ml-0">Update</Button> 
+                <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-0">Update</Button> 
+                <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-1">Remove</Button> 
+
             </div>
         </div>    
     </div>
