@@ -112,13 +112,13 @@ export default function StudentDetailsOne(){
                   <Button shape="square" className="w-full sm:px-5">
                     TimeTable
                   </Button>
-                  <Heading
-                        size="4xl"
-                        as="h5"
-                        className="flex justify-center items-center h-[52px] px-[35px] py-3 sm:px-5 bg-indigo-100 shadow-bs"
-                      >
-                        Website Change
-                      </Heading>
+                  <Button
+                    size="s"
+                    as="h5"
+                    className="flex justify-center items-center h-[52px] px-[35px] py-3 sm:px-5 bg-indigo-100 shadow-bs"
+                  >
+                    Website Change
+                  </Button>
                   <div className="mb-[407px] h-[52px] bg-indigo-100 shadow-bs"/>
                   </div>
                   </div>
