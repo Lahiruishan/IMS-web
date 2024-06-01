@@ -67,7 +67,7 @@ Input.propTypes = {
     shape:PropTypes.oneOf(["square","round"]),
     size:PropTypes.oneOf(["sm","md","xs"]),
     variant:PropTypes.oneOf(["fill"]),
-    color:PropTypes.oneOf(["blue_gray_100","indigo_100","gray_50"]),
+    color:PropTypes.oneOf(["blue_gray","indigo_100","gray_50"]),
 
 };
 export {Input};
