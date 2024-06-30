@@ -5,7 +5,7 @@ import {createColumnHelper} from "@tanstack/react-table";
 import React from "react";
 import IMA from "../../components/IMA";
 
-// dummy data
+// dummy data for the timetable
 
 
 const table2Data = [
@@ -16,9 +16,10 @@ const table2Data = [
 
 ];
 
-export default function StudentDetailsOne(){
+export default function StudentTimeTable(){
     const table2Columns = React.useMemo(() =>{
         const table2ColumnHelper = createColumnHelper();
+        // Define columns for the ReactTable
         return [
             table2ColumnHelper.accessor("day", {
                 cell: (info) =>(
@@ -97,27 +98,32 @@ export default function StudentDetailsOne(){
     }, []);
     return (
         <>
+         {/* Helmet is used to manage the document head */}
         <Helmet>
         <title>IMS-web</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
+      {/* Main container with full width and gradient background */}
       <div className="w-full pb-[13px] bg-gradient">
       <IMA className="flex md:flex-col justify-between items-start gap-5 bg-indigo-900" />
 
         <div>
-           
+             {/* Placeholder for additional content */} 
             </div>
           <div className="flex md:flex-col justify-between items-start gap-5 bg-indigo-900" />
+           {/* Main content container */}
           <div className="flex md:flex-col justify-center items-start gap-[49px]">
             <div className="h-[825px] w-[17%] md:w-full md:h-auto md:p-5 relative">
               <div className="flex flex-col items-center mt-[65px] ml-[41px] gap-[25px] md:ml-0">
-                
+               {/* Sidebar content can be added here */} 
               </div>
+              {/* Buttons container */}
               <div className="w-full h-max left-0 bottom-0 right-0 top-0 m-auto absolute">
                 <div>
                   <Button shape="square" className="w-full sm:px-5 z-[1] border-black-900 border border-solid">
                     Home
                   </Button>
+                  {/* Additional buttons */}
                   <div className="h-[52px] mt-[-49px] bg-indigo-100 shadow-bs" />
                 </div>
                 <div className="flex flex-col mt-[-52px] py-[52px] md:py-5 bg-indigo-300">
@@ -144,10 +150,12 @@ export default function StudentDetailsOne(){
                   </div>
                   </div>
                   </div>
+                   {/* Timetable and buttons container */}
             <div className="mt -[25px] flex w-[75%] flex-col items-start gap-[73px] md:w-full md:gap-[54px] sm:gap-9">
                 <Heading size="lg" as ="h3" className="ml-[321px] md:ml-0">
                     Time Table
                 </Heading>
+                 {/* ReactTable component for displaying the timetable */}
                 <ReactTable 
                 size = "xs"
                 bodyProps={{className: ""}}
@@ -157,8 +165,9 @@ export default function StudentDetailsOne(){
                 columns = {table2Columns}
                 data = {table2Data}
                 />
-
+                {/* Update  button */}
                 <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-0">Update</Button> 
+                {/* Remove button */}
                 <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-1">Remove</Button> 
 
             </div>

@@ -8,7 +8,7 @@ import Payments from "pages/Payments"
 import PaymentsStudents from "pages/PaymentsStudents"
 import PaymentsTeachers from "pages/PaymentsTeachers";
 import StudentDetails from "pages/StudentDetails";
-import StudentDetailsOne from "pages/StudentDetailsOne";
+import StudentTimeTable from "pages/StudentTimeTable";
 import StudentDetailsTwo from "pages/StudentDetailsTwo";
 import StudentDetailsThree from "pages/StudentDetailsThree";
 import TeachersOne from "pages/TeachersOne";
@@ -56,8 +56,8 @@ const ProjectRoutes = () => {
       element:<StudentDetails/>,
     },
     {
-      path:"StudentDetailsOne",
-      element:<StudentDetailsOne/>
+      path:"StudentTimeTable",
+      element:<StudentTimeTable />
     },
     {
       path:"StudentDetailsTwo",
