@@ -46,14 +46,13 @@ export default function DashboardPage() {
                   <Button shape="square" className="w-full sm:px-5">
                     TimeTable
                   </Button>
-                  <Button
-                    size="s"
-                    as="h5"
-                    className="flex justify-center items-center h-[52px] px-[35px] py-3 sm:px-5 bg-indigo-100 shadow-bs"
-                  >
-                    Payments
+                  <Button shape="square" className="w-full sm:px-5">
+                   Payments
                   </Button>
-              
+                  <Button shape="square" className="w-full sm:px-5">
+                  Website Changes
+                  </Button>
+                 
                   <div className="h-[52px] mb-[408px] bg-indigo-100 shadow-bs" />
                 </div>
               </div>
@@ -85,6 +84,7 @@ export default function DashboardPage() {
                   >
                     Logout
                   </Button>
+                  
                 </div>
               </div>
                {/* Events and Calendar section */}
