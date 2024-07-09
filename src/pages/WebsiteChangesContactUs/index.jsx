@@ -6,14 +6,19 @@ import IMA from "../../components/IMA";
 export default function WebsiteChangesContactUs() {
   return (
     <>
+    {/* Helmet is used to manage the document head */}
       <Helmet>
         <title>IMS-web</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
+       {/* Main container with full width and gradient background */}
       <div className="flex flex-col w-full pb-[13px] bg-gradient">
+         {/* IMA component with styles for flex layout */}
       <IMA className="flex md:flex-col justify-between items-start gap-5 bg-indigo-900" />
+        {/* Flex container for layout */}
         <div>
           <div className="flex w-[64%] md:w-full md:p-5">
+            
             <div className="flex w-full items-start justify-between gap-5 md:flex-col">
               <div className="relative h-[825px] w-[25%] md:h-auto md:w-full">
                 <div className="ml-[41px] mt-[65px] flex flex-col items-center gap-[25px] md:ml-0">
@@ -39,14 +44,9 @@ export default function WebsiteChangesContactUs() {
                   <Button shape="square" className="w-full sm:px-5">
                     TimeTable
                   </Button>
-                    <Input
-                      color="indigo_100"
-                      size="md"
-                      shape="square"
-                      name="website_changes"
-                      placeholder="Website Changes"
-                      className="mb-[408px] border border-solid border-black-900 font-bold sm:px-5"
-                    />
+                  <Button shape="square" className="w-full sm:px-5">
+                   Change to Payments
+                  </Button>
                   </div>
                 </div>
               </div>
