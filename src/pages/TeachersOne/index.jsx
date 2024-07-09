@@ -42,6 +42,9 @@ export default function TeachersOne() {
                   <Button shape="square" className="w-full sm:px-5">
                     TimeTable
                   </Button>
+                  <Button shape="square" className="w-full sm:px-5">
+                   Change to Payments
+                  </Button>
                   <div className="h-[52px] mt-[-1px] mb-[409px] bg-indigo-100 shadow-bs" />
                 </div>
               </div>
@@ -55,11 +58,11 @@ export default function TeachersOne() {
                   <div className="self-stretch">
                     <div className="flex flex-col items-start">
                       <div className="flex self-stretch bg-cyan-800 rounded-[10px]">
-                        <Heading size="6xl" as="h3" className="mt-[5px] ml-[59px] md:ml-0 !text-white-A700">
+                        <Heading size="6xl" as="h3" className="mt-[6px] ml-[59px] md:ml-0 !text-white-A700">
                           Name
                         </Heading>
                       </div>
-                      <Heading size="6xl" as="h3" className="mt-[-35px] ml-[280px] md:ml-0 !text-white-A700">
+                      <Heading size="6xl" as="h3" className="mt-[-24px] ml-[620px] md:ml-0 !text-white-A700">
                         Subject
                       </Heading>
                     </div>
@@ -102,18 +105,14 @@ export default function TeachersOne() {
                     <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
                       Add
                     </Button>
-                    <Heading
-                      size="xs"
-                      as="p"
-                      className="flex justify-center items-center h-[20px] px-1.5 py-px !text-white-A700 bg-indigo-900_01 text-shadow-ts"
-                    >
+                    <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
                       Remove
-                    </Heading>
+                    </Button>
                     <div className="flex justify-center w-[26%]">
                       <div className="flex flex-col items-end w-full">
-                        <Heading size="xs" as="p" className="mr-[19px] md:mr-0 !text-white-A700 z-[1]">
-                          Edit
-                        </Heading>
+                      <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
+                      Edit
+                    </Button>
                         <div className="self-stretch h-[20px] mt-[-18px] bg-indigo-900_01 shadow-xs" />
                       </div>
                     </div>
