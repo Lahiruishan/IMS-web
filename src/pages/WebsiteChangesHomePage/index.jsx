@@ -45,13 +45,9 @@ export default function WebsiteChangeHomePage() {
                   <Button shape="square" className="w-full sm:px-5">
                     TimeTable
                   </Button>
-                    <Heading
-                      size="xl"
-                      as="h5"
-                      className="flex justify-center items-center h-[52px] px-[35px] py-3 sm:px-5 bg-indigo-100 shadow-bs"
-                    >
-                      Website Changes
-                    </Heading>
+                  <Button shape="square" className="w-full sm:px-5">
+                   Change to Payments
+                  </Button>
                   </div>
                 </div>
               </div>

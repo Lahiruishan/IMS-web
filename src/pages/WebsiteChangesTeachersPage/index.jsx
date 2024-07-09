@@ -36,13 +36,9 @@ export default function WebsiteChangesTeachersPage() {
                   <Button shape="square" className="w-full sm:px-5">
                     TimeTable
                   </Button>
-                  <Heading
-                      size="xl"
-                      as="h5"
-                      className="flex justify-center items-center h-[52px] px-[35px] py-3 sm:px-5 bg-indigo-100 shadow-bs"
-                    >
-                      Website Changes
-                    </Heading> </div>
+                  <Button shape="square" className="w-full sm:px-5">
+                  Website Change
+                  </Button> </div>
               </div>
             </div>
             <div className="ml-[104px] mt-[85px] flex flex-col items-start gap-[19px] md:ml-0 md:w-full">
