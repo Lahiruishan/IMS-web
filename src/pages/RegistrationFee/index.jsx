@@ -35,9 +35,10 @@ export default function RegistrationFee() {
   </Text>
   {/*  Registration Fee form */}
   <form action="" class="px-10">
-{/* Username field */}
+    
+{/* Registration field */}
   <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
-  <label for="" class="text-neutral-1900 text-base font-normal ">Regitration ID:</label>
+  <label for="" class="text-neutral-1900 text-base font-normal ">Registration ID:</label>
   <input type="text" name="" placeholder="Enter your Registration ID correctly " id=""
             class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
 
