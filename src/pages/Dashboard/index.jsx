@@ -2,9 +2,40 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Img, Text, Heading, Button } from "../../components";
 import IMA from "../../components/IMA";
+import { useNavigate} from 'react-router-dom';
 
 export default function DashboardPage() {
+  const navigate = useNavigate();
+
+  const handleProfile = () => {
+    navigate('/RegistrationForm'); 
+};
+  const handleLogout = () => {
+      navigate('/LoginPage'); 
+  };
+  const handleHome = () => {
+    navigate('/Dashboard'); 
+};
+const handleStudentDetails = () => {
+  navigate('/StudentDetailsTwo')
+};
+const handleTeachers = () => {
+  navigate('/TeachersOne')
+};
+  const handlePayment = () => {
+    navigate('/Payments'); 
+};
+const handleStudentTimeTable = () => {
+  navigate('/StudentTimeTable'); 
+};  
+const handleWebsiteChange = () => {
+  navigate('/WebsiteChange'); 
+};
+
+
+ 
   return (
+ 
     <>
     {/* Helmet is used to manage the document head */}
       <Helmet>
@@ -26,7 +57,7 @@ export default function DashboardPage() {
                {/* Sidebar buttons */}
               <div className="w-full h-max left-0 bottom-0 right-0 top-0 m-auto absolute">
                 <div>
-                  <Button shape="square" className="w-full sm:px-5 z-[1] border-black-900 border border-solid">
+                  <Button shape="square" className="w-full sm:px-5 z-[1] border-black-900 border border-solid" onClick={handleHome}>
                     Home
                   </Button>
                   <div className="h-[52px] mt-[-49px] bg-indigo-100 shadow-bs" />
@@ -34,22 +65,22 @@ export default function DashboardPage() {
                 {/* Additional sidebar buttons */}
                 <div className="flex flex-col mt-[-52px] py-[52px] md:py-5 bg-indigo-300">
 
-                  <Button shape="square" className="w-full sm:px-5">
+                  <Button shape="square" className="w-full sm:px-5" onClick={handleTeachers}>
                     Teachers
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5">
+                  <Button shape="square" className="w-full sm:px-5" onClick={handleStudentDetails}>
                     Student Details
                   </Button>
                   <Button shape="square" className="w-full sm:px-5">
                     Papers
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5">
+                  <Button shape="square" className="w-full sm:px-5" onClick={handleStudentTimeTable}>
                     TimeTable
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5">
+                  <Button shape="square" className="w-full sm:px-5" onClick={handlePayment}>
                    Payments
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5">
+                  <Button shape="square" className="w-full sm:px-5" onClick={handleWebsiteChange}>
                   Website Changes
                   </Button>
                  
@@ -69,7 +100,7 @@ export default function DashboardPage() {
                   <Button
                     as="p"
                     className="flex justify-center items-center h-[35px] pt-[5px] pb-px px-7 sm:px-5 border-black-900 border border-solid bg-blue_gray-100"
-                  >
+                  onClick={handleProfile}>
                     My Profile
                   </Button>
                   <Button
@@ -79,9 +110,9 @@ export default function DashboardPage() {
                     Settings
                   </Button>
                   <Button
-                    as="p"
+                    as="p" 
                     className="flex justify-center items-center h-[35px] px-[35px] py-[3px] sm:px-5 border-black-900 border border-solid bg-blue_gray-100"
-                  >
+                  onClick={handleLogout}>
                     Logout
                   </Button>
                   

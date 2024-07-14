@@ -1,11 +1,20 @@
 import React from "react";
 import {Helmet} from "react-helmet";
 import {  Text,Button } from "../../components";
+import { useNavigate} from 'react-router-dom';
 
 
 
 export default function LoginPage() {
+  const navigate = useNavigate();
 
+  const handleLogin = () => {
+      navigate('/dashboard'); 
+  };
+
+  const handleRegister = () => {
+      navigate('/registrationForm'); 
+  };
   return (
     <>
      {/* Helmet is used to manage the document head */}
@@ -57,12 +66,12 @@ export default function LoginPage() {
  <div>
    
   <a href="#" className="mt-[50px] self-center">
-  <Button as="h2">Login</Button>
+  <Button as="h2" onClick={handleLogin}>Login</Button>
 
 </a>
 {/* Register button */}
 <a href="#" className="mt-[40px] self-center">
-  <Button as="h2">Register</Button>
+  <Button as="h2" onClick={handleRegister}>Register</Button>
   <label for="" class="text-neutral-1900 text-base font-normal-underline "> You can Register here.
                    </label>
 

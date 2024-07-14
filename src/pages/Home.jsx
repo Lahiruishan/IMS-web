@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div style={{ height: "100vh", padding: "20px", backgroundColor: "#232323", color: "white" }}>
-      <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Admin Pages</h1>
+      <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>IMS-WEB Project Pages</h1>
       <p style={{ fontSize: "18px", marginBottom: "30px" }}>
         This is the 3rd Year Project of UOJ-DCS Team-Alpha 2019/2020
       </p>
@@ -36,9 +36,7 @@ const Home = () => {
         <li style={{ marginBottom: "10px" }}>
           <Link to="StudentDetails" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDetails</Link>
         </li>
-        <li style={{ marginBottom: "10px" }}>
-          <Link to="StudentDetailsThree" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDetailsThree</Link>
-        </li>
+        
         <li style={{ marginBottom: "10px" }}>
           <Link to="StudentDetailsTwo" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDetailsTwo</Link>
         </li>

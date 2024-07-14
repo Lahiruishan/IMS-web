@@ -1,11 +1,17 @@
 import React from "react";
 import {Helmet} from "react-helmet";
 import {  Text,Button,CheckBox} from "../../components";
+import { useNavigate} from 'react-router-dom';
 
 
 
 export default function RegistrationForm() {
 
+  const navigate = useNavigate();
+
+  const handleRegisterFee = () => {
+      navigate('/RegistrationFee'); 
+  };
   return (
     <>
      {/* Helmet is used to manage the document head */}
@@ -131,7 +137,7 @@ export default function RegistrationForm() {
 <div className="relative mt-[52px] h-[42px] w-[29%] self-center md:h-auto">
  <div>
   <a href="#" className="mt-[53px] self-center">
-  <Button as="h2">Register</Button>
+  <Button as="h2" onClick={handleRegisterFee}>Register</Button>
 </a>
 </div>
 

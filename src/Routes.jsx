@@ -10,7 +10,6 @@ import PaymentsTeachers from "pages/PaymentsTeachers";
 import StudentDetails from "pages/StudentDetails";
 import StudentTimeTable from "pages/StudentTimeTable";
 import StudentDetailsTwo from "pages/StudentDetailsTwo";
-import StudentDetailsThree from "pages/StudentDetailsThree";
 import TeachersOne from "pages/TeachersOne";
 import TeachersTwo from "pages/TeachersTwo";
 import WebsiteChange from "pages/WebsiteChange";
@@ -73,10 +72,7 @@ const ProjectRoutes = () => {
       path:"StudentDetailsTwo",
       element:<StudentDetailsTwo/>
     },
-    {
-      path:"StudentDetailsThree",
-      element:<StudentDetailsThree/>
-    },
+   
     {
       path:"TeachersOne",
       element:<TeachersOne/>

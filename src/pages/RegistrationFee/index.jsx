@@ -1,11 +1,16 @@
 import React from "react";
 import {Helmet} from "react-helmet";
 import {  Text,Button } from "../../components";
+import { useNavigate} from 'react-router-dom';
 
 
 
 export default function RegistrationFee() {
+  const navigate = useNavigate();
 
+  const handleLogin = () => {
+      navigate('/LoginPage'); 
+  };
   return (
     <>
      {/* Helmet is used to manage the document head */}
@@ -52,7 +57,7 @@ export default function RegistrationFee() {
 
   <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
  
- 
+
  {/* Amount Payment field */}
 <div className="mt-7 flex flex-col">
 <label for="" class="text-neutral-1900 text-base font-normal">Amount :</label>
@@ -77,7 +82,7 @@ export default function RegistrationFee() {
 
 {/* Login button */}
 <a href="#" className="mt-[40px] self-center">
-  <Button as="h2">Login</Button>
+  <Button as="h2" onClick={handleLogin}>Login</Button>
   <label for="" class="text-neutral-1900 text-base font-normal-underline "> You can Log In here.
                    </label>
 
