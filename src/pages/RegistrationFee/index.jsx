@@ -35,36 +35,52 @@ export default function RegistrationFee() {
   </Text>
   {/*  Registration Fee form */}
   <form action="" class="px-10">
-    
+
 {/* Registration field */}
   <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
   <label for="" class="text-neutral-1900 text-base font-normal ">Registration ID:</label>
   <input type="text" name="" placeholder="Enter your Registration ID correctly " id=""
-            class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
+    class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
 
   <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
+ 
+ {/* FullName field */}
+ <div className="ml-6 flex flex-col items-start self-stretch md:ml-0"/>
+  <label for="" class="text-neutral-1900 text-base font-normal ">Full Name:</label>
+  <input type="text" name="" placeholder="Enter your FullName correctly " id=""
+    class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
+
+  <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
+ 
  
  {/* Amount Payment field */}
 <div className="mt-7 flex flex-col">
 <label for="" class="text-neutral-1900 text-base font-normal">Amount :</label>
 <input type="text" name="" placeholder="Enter your Payment Here " id=""
-            class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none " />
+    class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none " />
                            
 </div>
 <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
 
 {/* Submit button */}
-<div className="relative mt-[52px] h-[42px] w-[29%] self-center md:h-auto">
- <div>
-  <a href="#" className="mr-6 md:mr-0">
-   
+<div className="relative mt-[50px] flex justify-center gap-4"> <div>
+  
   <a href="#" className="mt-[53px] self-center">
   <Text size="10xl" as="p" className="! font-actor underline">
     Submit
   </Text>
-  <Button as="h2">Submit</Button>
-
+  <Button as="h2">Submit</Button>  
 </a>
+<label for="" class="text-neutral-1900 text-base font-normal "> Once you register your details will be saved. After registration, you will be redirected to the payment page. After a successful payment, we will send you an email, and you can log in to your account.
+                          
+                   </label>
+
+{/* Login button */}
+<a href="#" className="mt-[40px] self-center">
+  <Button as="h2">Login</Button>
+  <label for="" class="text-neutral-1900 text-base font-normal-underline "> You can Log In here.
+                   </label>
+
 </a>
 </div>
 

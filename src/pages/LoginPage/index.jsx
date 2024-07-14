@@ -60,7 +60,7 @@ export default function LoginPage() {
   <Button as="h2">Login</Button>
 
 </a>
-{/* Regiser button */}
+{/* Register button */}
 <a href="#" className="mt-[40px] self-center">
   <Button as="h2">Register</Button>
   <label for="" class="text-neutral-1900 text-base font-normal-underline "> You can Register here.
