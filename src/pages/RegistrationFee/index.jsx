@@ -4,7 +4,7 @@ import {  Text,Button } from "../../components";
 
 
 
-export default function LoginPage() {
+export default function RegistrationFee() {
 
   return (
     <>
@@ -31,41 +31,39 @@ export default function LoginPage() {
 <div className="flex flex-1 flex-col items-center justify-center rounded-[10px] bg-blue_gray-100 px-14 pb-[151px] pt-[68px] shadow-xs md:self-stretch md:p-5">
 <div className="flex w-[88%] flex-col items-start gap-[47px] md:w-full">
   <Text size="10xl" as="p" className="! font-actor underline">
-    Login to your Account
+    Registration Fee 
   </Text>
-  {/* Login form */}
+  {/*  Registration Fee form */}
   <form action="" class="px-10">
 {/* Username field */}
   <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
-  <label for="" class="text-neutral-1900 text-base font-normal ">User Name :</label>
-  <input type="text" name="" placeholder="Enter your User Name " id=""
-  class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
+  <label for="" class="text-neutral-1900 text-base font-normal ">Regitration ID:</label>
+  <input type="text" name="" placeholder="Enter your Registration ID correctly " id=""
+            class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
 
   <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
  
- {/* Password field */}
+ {/* Amount Payment field */}
 <div className="mt-7 flex flex-col">
-<label for="" class="text-neutral-1900 text-base font-normal">Password :</label>
-<input type="text" name="" placeholder="Enter your Password " id=""
-   class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none " />
+<label for="" class="text-neutral-1900 text-base font-normal">Amount :</label>
+<input type="text" name="" placeholder="Enter your Payment Here " id=""
+            class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none " />
                            
 </div>
 <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
 
-{/* Login button */}
-<div className="relative mt-[50px] flex justify-center gap-4">
+{/* Submit button */}
+<div className="relative mt-[52px] h-[42px] w-[29%] self-center md:h-auto">
  <div>
+  <a href="#" className="mr-6 md:mr-0">
    
-  <a href="#" className="mt-[50px] self-center">
-  <Button as="h2">Login</Button>
+  <a href="#" className="mt-[53px] self-center">
+  <Text size="10xl" as="p" className="! font-actor underline">
+    Submit
+  </Text>
+  <Button as="h2">Submit</Button>
 
 </a>
-{/* Regiser button */}
-<a href="#" className="mt-[40px] self-center">
-  <Button as="h2">Register</Button>
-  <label for="" class="text-neutral-1900 text-base font-normal-underline "> You can Register here.
-                   </label>
-
 </a>
 </div>
 

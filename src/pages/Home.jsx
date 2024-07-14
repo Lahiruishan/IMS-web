@@ -13,6 +13,12 @@ const Home = () => {
           <Link to="LoginPage" style={{ color: "#87CEFA", textDecoration: "none" }}>LogInPage</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
+          <Link to="RegistrationFee" style={{ color: "#87CEFA", textDecoration: "none" }}>RegistrationFee</Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="RegistrationForm" style={{ color: "#87CEFA", textDecoration: "none" }}>RegistrationForm</Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
           <Link to="Dashboard" style={{ color: "#87CEFA", textDecoration: "none" }}>Dashboard</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>

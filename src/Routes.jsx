@@ -19,7 +19,8 @@ import WebsiteChangesContactUs from "pages/WebsiteChangesContactUs";
 import WebsiteChangesTeachersPage from "pages/WebsiteChangesTeachersPage";
 import WebsiteChangesTeachersPersonalPage from "pages/WebsiteChangesTeachersPersonalPage";
 import WebsiteChangesTimetablePage from "pages/WebsiteChangesTimetablePage";
-
+import RegistrationFee from "pages/RegistrationFee";
+import RegistrationForm from "pages/RegistrationForm";
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/",
@@ -30,6 +31,15 @@ const ProjectRoutes = () => {
      element:<LoginPage />,
      }
      ,
+     {
+      path: "RegistrationForm",
+     element:<RegistrationForm />,
+     },
+     {
+      path: "RegistrationFee",
+     element:<RegistrationFee />,
+     },
+
     {
       path: "Dashboard",
       element: <Dashboard />,

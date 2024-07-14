@@ -4,5 +4,6 @@ import { Img } from "./Img";
 import { Button } from "./Button";
 import { Input } from "./Input";
 import { ReactTable } from "./ReactTable";
+import { CheckBox } from "./CheckBox";
 
-export { Text, Heading, Img, Button,Input,ReactTable };
+export { Text, Heading, Img, Button,Input,ReactTable,CheckBox };
