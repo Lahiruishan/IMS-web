@@ -1,25 +1,24 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
 import Home from "pages/Home";
-import LoginPage from "pages/LoginPage";
-import Dashboard from "pages/Dashboard";
-import WebsiteChanges from "pages/WebsiteChange";
-import Payments from "pages/Payments"
-import PaymentsStudents from "pages/PaymentsStudents"
-import PaymentsTeachers from "pages/PaymentsTeachers";
-import StudentDetails from "pages/StudentDetails";
-import StudentTimeTable from "pages/StudentTimeTable";
-import StudentDetailsTwo from "pages/StudentDetailsTwo";
-import TeachersOne from "pages/TeachersOne";
-import TeachersTwo from "pages/TeachersTwo";
-import WebsiteChange from "pages/WebsiteChange";
-import WebsiteChangesHomePage from "pages/WebsiteChangesHomePage";
-import WebsiteChangesContactUs from "pages/WebsiteChangesContactUs";
-import WebsiteChangesTeachersPage from "pages/WebsiteChangesTeachersPage";
-import WebsiteChangesTeachersPersonalPage from "pages/WebsiteChangesTeachersPersonalPage";
-import WebsiteChangesTimetablePage from "pages/WebsiteChangesTimetablePage";
-import RegistrationFee from "pages/RegistrationFee";
-import RegistrationForm from "pages/RegistrationForm";
+import LoginPage from "pages/Teacher/TeacherLoginPage";
+import Dashboard from "pages/Student/StudentDashboard";
+import WebsiteChanges from "pages/Admin/WebsiteChange";
+import Payments from "pages/Admin/Payments"
+import PaymentsStudents from "pages/Admin/PaymentsStudents"
+import PaymentsTeachers from "pages/Admin/PaymentsTeachers";
+import StudentDetails from "pages/Admin/StudentDetails";
+import StudentTimeTable from "pages/Student/StudentTimeTable";
+import TeachersOne from "pages/Admin/TeachersChange";
+import TeachersTwo from "pages/Student/TeacherDetails";
+import WebsiteChange from "pages/Admin/WebsiteChange";
+import WebsiteChangesHomePage from "pages/Admin/WebsiteChangesHomePage";
+import WebsiteChangesContactUs from "pages/Admin/WebsiteChangesContactUs";
+import WebsiteChangesTeachersPage from "pages/Admin/WebsiteChangesTeachersPage";
+import WebsiteChangesTeachersPersonalPage from "pages/Admin/WebsiteChangesTeachersPersonalPage";
+import WebsiteChangesTimetablePage from "pages/Admin/WebsiteChangesTimetablePage";
+import RegistrationFee from "pages/Student/StudentRegistrationFee";
+import RegistrationForm from "pages/Student/RegistrationForm";
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/",
@@ -68,11 +67,7 @@ const ProjectRoutes = () => {
       path:"StudentTimeTable",
       element:<StudentTimeTable />
     },
-    {
-      path:"StudentDetailsTwo",
-      element:<StudentDetailsTwo/>
-    },
-   
+  
     {
       path:"TeachersOne",
       element:<TeachersOne/>

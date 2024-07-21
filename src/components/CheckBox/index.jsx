@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const variants = {
     primary:
-        "border-black-900_03 border border-solid checked:border-black-900_03 checked:border checked:border-solid checked:bg-blue_gray-100 checked:focus:bg-blue_gray-100 checked:focus:border-black-900_03",
+        "border-black-900_03 border border-solid checked:border-black-900_03 checked:border checked:border-solid checked:bg-black checked:focus:bg-black checked:focus:border-black-900_03",
 };
 const sizes = {
     xs: "h-[22px] w-[22px]",
@@ -55,4 +55,4 @@ CheckBox.propTypes = {
     variant: PropTypes.oneOf(["primary"]),
 };
 
-export {CheckBox};
+export { CheckBox };
