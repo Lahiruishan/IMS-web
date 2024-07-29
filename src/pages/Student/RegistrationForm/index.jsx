@@ -51,7 +51,7 @@ export default function RegistrationForm() {
                 {/* Full name field */}
                 <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
                   <label htmlFor="full-name" className="text-neutral-1900 text-base font-normal">Full Name:</label>
-                  <input type="text" id="full-name" placeholder="Enter your Full Name" className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
+                  <input type="text" id="full-name" placeholder="Enter your Full {Student's}Name" className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
                 </div>
                 <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
 
@@ -78,6 +78,30 @@ export default function RegistrationForm() {
                 <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
                   <label htmlFor="email" className="text-neutral-1900 text-base font-normal">Email:</label>
                   <input type="text" id="email" placeholder="Enter your Email Address" className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
+                </div>
+                <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
+                
+
+                {/* Student's Mobile field */}
+                <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
+                  <label htmlFor="Smobile" className="text-neutral-1900 text-base font-normal">Student's Mobile Number:</label>
+                  <input type="text" id="email" placeholder="Enter Student's Mobile Number" className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
+                </div>
+                <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
+
+
+                {/* Parent's field */}
+                <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
+                  <label htmlFor="Pname" className="text-neutral-1900 text-base font-normal">Parent's Name:</label>
+                  <input type="text" id="email" placeholder="Enter your Parent's FullName" className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
+                </div>
+                <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
+  
+   
+                {/* Parent's Mobile field */}
+                <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
+                  <label htmlFor="Pmobile" className="text-neutral-1900 text-base font-normal">Parent's Mobile Number:</label>
+                  <input type="text" id="email" placeholder="Enter your Parent's Mobile Number" className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
                 </div>
                 <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
 
