@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Text } from "./..";
+import { Heading, Text } from "..";
 
 export default function IMA({ ...props }) {
   return (

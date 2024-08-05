@@ -1,4 +1,4 @@
-import {Img} from "./..";
+import {Img} from "..";
 import React from "react";
 
 export default function Header2({props}){
