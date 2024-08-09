@@ -4,7 +4,7 @@ import { Img, Text, Heading, Button } from "../../../components";
 import IMA from "../../../components/IMA";
 import { useNavigate} from 'react-router-dom';
 
-export default function DashboardPage() {
+export default function StudentDashboardPage() {
   const navigate = useNavigate();
 
   const handleProfile = () => {
@@ -14,9 +14,9 @@ export default function DashboardPage() {
       navigate('/LoginPage'); 
   };
   const handleHome = () => {
-    navigate('/Dashboard'); 
+    navigate('/dashboard'); 
 };
-const handleStudentDetails = () => {
+const handleTeachersDetails = () => {
   navigate('/StudentDetailsTwo')
 };
 const handleTeachers = () => {
@@ -28,9 +28,9 @@ const handleTeachers = () => {
 const handleStudentTimeTable = () => {
   navigate('/StudentTimeTable'); 
 };  
-const handleWebsiteChange = () => {
-  navigate('/WebsiteChange'); 
-};
+// const handleWebsiteChange = () => {
+//   navigate('/WebsiteChange'); 
+// };
 
 
  
@@ -68,11 +68,11 @@ const handleWebsiteChange = () => {
                   <Button shape="square" className="w-full sm:px-5" onClick={handleTeachers}>
                     Teachers
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5" onClick={handleStudentDetails}>
-                    Student Details
+                  <Button shape="square" className="w-full sm:px-5" onClick={handleTeachersDetails}>
+                    Teacher's Details
                   </Button>
                   <Button shape="square" className="w-full sm:px-5">
-                    Papers
+                    Learning Materials
                   </Button>
                   <Button shape="square" className="w-full sm:px-5" onClick={handleStudentTimeTable}>
                     TimeTable
@@ -80,9 +80,9 @@ const handleWebsiteChange = () => {
                   <Button shape="square" className="w-full sm:px-5" onClick={handlePayment}>
                    Payments
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5" onClick={handleWebsiteChange}>
+                  {/* <Button shape="square" className="w-full sm:px-5" onClick={handleWebsiteChange}>
                   Website Changes
-                  </Button>
+                  </Button> */}
                  
                   <div className="h-[52px] mb-[408px] bg-indigo-100 shadow-bs" />
                 </div>

@@ -5,18 +5,18 @@ const shapes = {
     square: "rounded-[0px",
     round: "rounded-[5px]",
 };
-const variants = {
-    fill:{
-        blue_gray_100:"bg-blue_gray-100",
-        indigo_100:"bg-indigo-100 shadow-bs text-black-900",
-        gray_50: "bg-gray-50",
-    },
-};
-const sizes = {
-    sm: "h-[41px] pr-[35px] text-3xl",
-    md: "h-[53px] pl-[27px] pr-[35px] text-[19px]",
-    xs: "h-[37px] pl-[27px] pr-[35px]",
-};
+// // const variants = {
+// //     fill:{
+// //         blue_gray_100:"bg-blue_gray-100",
+// //         indigo_100:"bg-indigo-100 shadow-bs text-black-900",
+// //         gray_50: "bg-gray-50",
+// //     },
+// };
+// const sizes = {
+//     sm: "h-[41px] pr-[35px] text-3xl",
+//     md: "h-[53px] pl-[27px] pr-[35px] text-[19px]",
+//     xs: "h-[37px] pl-[27px] pr-[35px]",
+// };
 const Input = React.forwardRef(
     (
         {

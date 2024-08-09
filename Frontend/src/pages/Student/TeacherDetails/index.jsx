@@ -72,7 +72,7 @@ export default function TeachersTwoPage() {
   return (
     <>
       <Helmet>
-        <title>Ishan's Application3</title>
+        <title>IMS-web</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="flex flex-col w-full pb-[13px] bg-gradient">
