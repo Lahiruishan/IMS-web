@@ -9,10 +9,10 @@ import IMA from "../../../components/IMA";
 
 
 const table2Data = [
-    {day: "Monday",Hnumber:"H1",time:"7.00 a.m-1.00p.m", class:"Chemistry-Theory- 2024 A/L" , teacher: "Teacher A"},
-    {day: "Monday",Hnumber:"H2" ,time:"8.00 a.m-2.00p.m", class:"Chemistry-Theory- 2025 A/L", teacher: "Teacher B"},
-    {day: "Monday",Hnumber:"H1",time:"7.00 a.m-1.00p.m", class:"Chemistry-Theory- 2024 A/L" , teacher: "Teacher A"},
-    {day: "Monday",Hnumber:"H2" ,time:"8.00 a.m-2.00p.m", class:"Chemistry-Theory- 2025 A/L", teacher: "Teacher B"},
+    {day: "Monday",Hnumber:"H1",time:"7.00 a.m-1.00p.m", class:"Chemistry-Theory- 2024 A/L" ,teacher :"Chathuranga Dharmadasa"},
+    {day: "Tuesday",Hnumber:"H2" ,time:"8.00 a.m-2.00p.m", class:"Physics-Theory- 2025 A/L",teacher :"Dilshan Chathuranga"},
+    {day: "Saturday",Hnumber:"H1",time:"2.00 p.m-5.00p.m", class:"Biology-Theory- 2024 A/L" ,teacher :"Kasun Pushpakumara"},
+    {day: "Sunday",Hnumber:"H2" ,time:"8.00 a.m-2.00p.m", class:"Com.Maths-Theory- 2025 A/L",teacher :" Savindu Lasantha"},
 
 ];
 
@@ -20,7 +20,7 @@ export default function StudentTimeTable(){
     const table2Columns = React.useMemo(() =>{
         const table2ColumnHelper = createColumnHelper();
         // Define columns for the ReactTable
-        return [
+        return ([
             table2ColumnHelper.accessor("day", {
                 cell: (info) =>(
                     <Text as = "p" className="tracking-[0.10px]">
@@ -94,8 +94,8 @@ export default function StudentTimeTable(){
                 meta: {width:"155px"},
             }),
             
-        ];
-    }, []);
+        ]);
+    });
     return (
         <>
          {/* Helmet is used to manage the document head */}
@@ -134,10 +134,10 @@ export default function StudentTimeTable(){
                     Student Details
                   </Button>
                   <Button shape="square" className="w-full sm:px-5">
-                    Papers
+                    Learning Materials
                   </Button>
                   <Button shape="square" className="w-full sm:px-5">
-                    TimeTable
+                    Student TimeTable
                   </Button>
                   <Button
                     size="s"
@@ -166,9 +166,9 @@ export default function StudentTimeTable(){
                 data = {table2Data}
                 />
                 {/* Update  button */}
-                <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-0">Update</Button> 
+               {/* <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-0">Update</Button>  */}
                 {/* Remove button */}
-                <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-1">Remove</Button> 
+                {/* <Button color = "indigo_900" size="md" shape="square" className="ml-[905px]  font-bold md:ml-1">Remove</Button>  */}
 
             </div>
         </div>    

@@ -23,7 +23,7 @@ const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/",
      element: <Home /> },
-     ,
+   
      {
       path: "LoginPage",
      element:<LoginPage />,

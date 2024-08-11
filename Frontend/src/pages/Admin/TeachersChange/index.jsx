@@ -71,7 +71,7 @@ export default function TeachersOne() {
                   {/* Backend part  here  there is dummy frontend*/}
                   <div className="flex self-stretch justify-between gap-5 p-1 bg-blue_gray-500 flex-wrap rounded-[10px]">
                     <Text size="3xl" as="p" className="self-start ml-[21px] md:ml-0">
-                      ThamiraHetrath
+                      Chathuranga Dharmadasa
                     </Text>
                     <Text size="3xl" as="p" className="self-start mr-[469px] md:mr-0">
                       Chemistry
@@ -79,7 +79,7 @@ export default function TeachersOne() {
                   </div>
                   <div className="flex self-stretch justify-between items-start gap-5 bg-blue_gray-500 flex-wrap rounded-[10px]">
                     <Text size="3xl" as="p" className="ml-[58px]">
-                      XXXX
+                      Kasun Pushpakumara
                     </Text>
                     <Text size="4xl" as="p" className="mt-1.5 mr-[492px]">
                       Biology
@@ -87,7 +87,7 @@ export default function TeachersOne() {
                   </div>
                   <div className="flex self-stretch justify-between gap-5 p-1 bg-blue_gray-500 flex-wrap rounded-[10px]">
                     <Text size="3xl" as="p" className="self-start ml-[57px] md:ml-0">
-                      XXXX
+                      Savindu Lasantha
                     </Text>
                     <Text size="3xl" as="p" className="mr-[486px] md:mr-0">
                       C. Maths
@@ -95,24 +95,24 @@ export default function TeachersOne() {
                   </div>
                   <div className="flex self-stretch justify-between items-start gap-5 bg-blue_gray-500 flex-wrap rounded-[10px]">
                     <Text size="3xl" as="p" className="mb-[11px] ml-[60px]">
-                      XXXX
+                      Dilshan Chathuranga
                     </Text>
                     <Text size="3xl" as="p" className="mr-[488px]">
                       Physics
                     </Text>
                   </div>
                   <div className="flex justify-between w-[33%] md:w-full mr-[22px] gap-5 md:mr-0">
-                    <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
+                    {/* <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
                       Add
                     </Button>
                     <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
                       Remove
-                    </Button>
+                    </Button> */}
                     <div className="flex justify-center w-[26%]">
                       <div className="flex flex-col items-end w-full">
-                      <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
+                      {/* <Button color="indigo_900_01" size="xs" shape="square" className="sm:px-5 font-bold min-w-[72px]">
                       Edit
-                    </Button>
+                    </Button> */}
                         <div className="self-stretch h-[20px] mt-[-18px] bg-indigo-900_01 shadow-xs" />
                       </div>
                     </div>

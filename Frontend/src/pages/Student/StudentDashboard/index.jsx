@@ -16,9 +16,9 @@ export default function DashboardPage() {
   const handleHome = () => {
     navigate('/Dashboard'); 
 };
-const handleStudentDetails = () => {
-  navigate('/StudentDetailsTwo')
-};
+// const handleStudentDetails = () => {
+//   navigate('/StudentDetailsTwo')
+// };
 const handleTeachers = () => {
   navigate('/TeachersOne')
 };
@@ -28,9 +28,7 @@ const handleTeachers = () => {
 const handleStudentTimeTable = () => {
   navigate('/StudentTimeTable'); 
 };  
-const handleWebsiteChange = () => {
-  navigate('/WebsiteChange'); 
-};
+
 
 
  
@@ -68,21 +66,19 @@ const handleWebsiteChange = () => {
                   <Button shape="square" className="w-full sm:px-5" onClick={handleTeachers}>
                     Teachers
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5" onClick={handleStudentDetails}>
+                  {/* <Button shape="square" className="w-full sm:px-5" onClick={handleStudentDetails}>
                     Student Details
-                  </Button>
+                  </Button> */}
                   <Button shape="square" className="w-full sm:px-5">
-                    Papers
+                    Learning Materials
                   </Button>
                   <Button shape="square" className="w-full sm:px-5" onClick={handleStudentTimeTable}>
-                    TimeTable
+                    StudentTimeTable
                   </Button>
                   <Button shape="square" className="w-full sm:px-5" onClick={handlePayment}>
                    Payments
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5" onClick={handleWebsiteChange}>
-                  Website Changes
-                  </Button>
+                 
                  
                   <div className="h-[52px] mb-[408px] bg-indigo-100 shadow-bs" />
                 </div>

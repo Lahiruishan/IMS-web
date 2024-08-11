@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { Button, Text, Heading } from "../../../components";
 import { ReactTable } from "../../../components/ReactTable";
