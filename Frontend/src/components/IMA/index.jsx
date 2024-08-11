@@ -5,7 +5,7 @@ export default function IMA({ ...props }) {
   return (
     <div {...props}>
       <Text size="lg" as="p" className="mb-4 ml-96 md:ml-0 !text-purple-50 !font-aclonica">
-        Institute Management System
+        Learning Management System
       </Text>
       <div className="flex sm:flex-col justify-center items-center w-[27%] md:w-full mb-[15px] mr-[141px] gap-3 md:mr-0">
         <div className="h-[62px] w-[30%] sm:w-full relative">

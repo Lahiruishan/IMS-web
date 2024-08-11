@@ -2,7 +2,7 @@ import React from "react";
 import { useRoutes } from "react-router-dom";
 import Home from "./pages/Home";
 import LoginPage from "./pages/Teacher/TeacherLoginPage";
-import StudentDashboard from "./pages/Student/Dashboard";
+import Dashboard from "./pages/Student/StudentDashboard";
 import WebsiteChanges from "./pages/Admin/WebsiteChange";
 import Payments from "./pages/Admin/Payments"
 import PaymentsStudents from "./pages/Admin/PaymentsStudents"
@@ -22,7 +22,7 @@ import RegistrationForm from "./pages/Student/RegistrationForm";
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/",
-     element: <Home /> ,}
+     element: <Home /> },
      ,
      {
       path: "LoginPage",
@@ -39,8 +39,8 @@ const ProjectRoutes = () => {
      },
 
     {
-      path: "StudentDashboard",
-      element: <StudentDashboard />,
+      path: "Dashboard",
+      element: <Dashboard />,
     },
     {
       path: "WebsiteChanges",
