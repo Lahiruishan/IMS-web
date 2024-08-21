@@ -19,11 +19,18 @@ import WebsiteChangesTeachersPersonalPage from "./pages/Admin/WebsiteChangesTeac
 import WebsiteChangesTimetablePage from "./pages/Admin/WebsiteChangesTimetablePage";
 import RegistrationFee from "./pages/Student/StudentRegistrationFee";
 import RegistrationForm from "./pages/Student/RegistrationForm";
+import HomePageNewPage from "./pages/HomePageNew/index";
+
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/",
-     element: <Home /> },
-   
+     element: <Home /> }
+     ,
+     {
+      path: "HomePageNewPage",
+     element:<HomePageNewPage />,
+     }
+     ,
      {
       path: "LoginPage",
      element:<LoginPage />,

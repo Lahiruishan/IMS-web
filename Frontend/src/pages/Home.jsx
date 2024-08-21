@@ -64,6 +64,9 @@ const Home = () => {
         <li style={{ marginBottom: "10px" }}>
           <Link to="WebsiteChangesTimetablePage" style={{ color: "#87CEFA", textDecoration: "none" }}>WebsiteChangesTimetablePage</Link>
         </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="HomePageNewPage" style={{ color: "#87CEFA", textDecoration: "none" }}>HomePageNewPage</Link>
+        </li>
       </ul>
     </div>
   );
