@@ -6,6 +6,8 @@ const advancedSubjectsList = [
   {
     combinedMathsText: "Combined Maths",
     econText: "Econ",
+    businessStudiesText: "Business Studies",
+    accountingText: "Accounting",
     descriptionText1: (
       <>
         Thamira Herath
@@ -20,36 +22,14 @@ const advancedSubjectsList = [
         B.Sc.Chem. (U.O.C) C.Chem(i)
       </>
     ),
-  },
-  {
-    combinedMathsText: "Combined Maths",
-    econText: "Econ",
-    descriptionText1: (
+    descriptionText3: (
       <>
         Thamira Herath
         <br />
         B.Sc.Chem. (U.O.C) C.Chem(i)
       </>
     ),
-    descriptionText2: (
-      <>
-        Thamira Herath
-        <br />
-        B.Sc.Chem. (U.O.C) C.Chem(i)
-      </>
-    ),
-  },
-  {
-    combinedMathsText: "Combined Maths",
-    econText: "Econ",
-    descriptionText1: (
-      <>
-        Thamira Herath
-        <br />
-        B.Sc.Chem. (U.O.C) C.Chem(i)
-      </>
-    ),
-    descriptionText2: (
+    descriptionText4: (
       <>
         Thamira Herath
         <br />
@@ -78,7 +58,11 @@ export default function CommerceSection() {
           <div className="ml-[74px] mr-[66px] flex gap-[162px] md:mx-0 md:flex-col">
             <Suspense fallback={<div>Loading feed...</div>}>
               {advancedSubjectsList.map((d, index) => (
-                <UserProfile1 {...d} key={"commerceList" + index} className="mb-2 md:mb-0" />
+                <UserProfile1
+                  {...d}
+                  key={"commerceList" + index}
+                  className="mb-2 md:mb-0"
+                />
               ))}
             </Suspense>
           </div>

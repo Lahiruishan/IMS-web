@@ -5,11 +5,7 @@ export default function UserProfile({
     userTitle = "Combined Maths",
     userSubtitle = "Combined Maths",
     userdescription1=(
-        <>
-        Chathuranga Dharmadasa 
-        <br />
-        B.Sc[Hons].Chem(University of Jaffna)
-        </>
+       <></>
     ),
     userdescription2=(
         <>

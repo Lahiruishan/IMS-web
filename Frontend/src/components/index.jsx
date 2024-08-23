@@ -5,5 +5,7 @@ import { Button } from "./Button";
 import { Input } from "./Input";
 import { ReactTable } from "./ReactTable";
 import { CheckBox } from "./CheckBox";
+import Slider from "react-slick";
 
-export { Text, Heading, Img, Button,Input,ReactTable,CheckBox };
+
+export { Slider,Text, Heading, Img, Button,Input,ReactTable,CheckBox };
