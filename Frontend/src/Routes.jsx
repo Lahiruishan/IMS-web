@@ -20,6 +20,7 @@ import WebsiteChangesTimetablePage from "./pages/Admin/WebsiteChangesTimetablePa
 import RegistrationFee from "./pages/Student/StudentRegistrationFee";
 import RegistrationForm from "./pages/Student/RegistrationForm";
 import HomePageNewPage from "./pages/HomePageNew/index";
+import StudentLearningMaterials from "./pages/Student/StudentLearningMaterials/index";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -74,7 +75,11 @@ const ProjectRoutes = () => {
       path:"StudentTimeTable",
       element:<StudentTimeTable />
     },
-  
+    {
+      path:"StudentLearningMaterials",
+      element:<StudentLearningMaterials/>
+    }
+    ,
     {
       path:"TeachersOne",
       element:<TeachersOne/>

@@ -67,6 +67,10 @@ const Home = () => {
         <li style={{ marginBottom: "10px" }}>
           <Link to="HomePageNewPage" style={{ color: "#87CEFA", textDecoration: "none" }}>HomePageNewPage</Link>
         </li>
+
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="StudentLearningMaterials" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentLearningMaterials</Link>
+        </li>
       </ul>
     </div>
   );

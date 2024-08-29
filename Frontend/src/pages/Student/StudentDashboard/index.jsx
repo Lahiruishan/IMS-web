@@ -16,11 +16,11 @@ export default function DashboardPage() {
   const handleHome = () => {
     navigate('/Dashboard'); 
 };
-// const handleStudentDetails = () => {
-//   navigate('/StudentDetailsTwo')
-// };
 const handleTeachers = () => {
   navigate('/TeachersOne')
+};
+const handleStudentLearingMaterials = () => {
+  navigate('/StudentLearingMaterials')
 };
   const handlePayment = () => {
     navigate('/Payments'); 
@@ -69,7 +69,7 @@ const handleStudentTimeTable = () => {
                   {/* <Button shape="square" className="w-full sm:px-5" onClick={handleStudentDetails}>
                     Student Details
                   </Button> */}
-                  <Button shape="square" className="w-full sm:px-5">
+                  <Button shape="square" className="w-full sm:px-5" onClick={handleStudentLearingMaterials}>
                     Learning Materials
                   </Button>
                   <Button shape="square" className="w-full sm:px-5" onClick={handleStudentTimeTable}>
