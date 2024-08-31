@@ -1,18 +1,18 @@
 import React from "react";
-import { Button, Heading } from "..";
+import { Button, Heading1 } from "..";
 
 export default function Header1({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} flex justify-between items-center px-4 py-[18px] bg-indigo-a400`}
+      className={`${props.className} flex justify-between items-center px-4 py-[18px] bg-blue-700`}
     >
       {/* Left side: Logo */}
       <div className="flex items-center">
         <img
-          src="/images/Logo.jpg" 
+          src="/images/0.jpg"
           alt="Logo"
-          className="w-14 h-15 rounded-full"
+          className="w-36 h-28 rounded"  // Increased width and height
         />
       </div>
 
@@ -21,89 +21,54 @@ export default function Header1({ ...props }) {
         <ul className="flex flex-wrap gap-8">
           <li>
             <a href="#">
-              <Heading
-                size="heading4xl"
-                as="h5"
-                className="!text-white underline"
-              >
+              <Heading1 size="xl" as="h5">
                 Home
-              </Heading>
+              </Heading1>
             </a>
           </li>
-
           <li>
             <a href="#" className="cursor-pointer">
-              <Heading
-                size="heading4xl"
-                as="h5"
-                className="!text-white hover:underline"
-              >
+              <Heading1 size="xl" as="h5">
                 Teacher
-              </Heading>
+              </Heading1>
             </a>
           </li>
-
           <li>
             <a href="#" className="cursor-pointer">
-              <Heading
-                size="heading4xl"
-                as="h5"
-                className="!text-white hover:underline"
-              >
+              <Heading1 size="xl" as="h5">
                 Time Table
-              </Heading>
+              </Heading1>
             </a>
           </li>
-
           <li>
             <a href="#" className="cursor-pointer">
-              <Heading
-                size="heading4xl"
-                as="h5"
-                className="!text-white underline"
-              >
+              <Heading1 size="xl" as="h5">
                 Blog
-              </Heading>
+              </Heading1>
             </a>
           </li>
-
           <li>
             <a href="#" className="cursor-pointer">
-              <Heading
-                size="heading4xl"
-                as="h5"
-                className="!text-white underline"
-              >
+              <Heading1 size="xl" as="h5">
                 Library
-              </Heading>
+              </Heading1>
             </a>
           </li>
-
           <li>
             <a href="#" className="cursor-pointer">
-              <Heading
-                size="heading4xl"
-                as="h5"
-                className="!text-white underline"
-              >
+              <Heading1 size="xl" as="h5">
                 Mini Videos
-              </Heading>
+              </Heading1>
             </a>
           </li>
-
           <li>
             <a href="#" className="cursor-pointer">
-              <Heading
-                size="heading4xl"
-                as="h5"
-                className="!text-white underline"
-              >
+              <Heading1 size="xl" as="h5">
                 Contact Us
-              </Heading>
+              </Heading1>
             </a>
           </li>
         </ul>
-
         <Button shape="round" className="ml-5 min-w-[96px] font-bold md:ml-0">
           Sign In
         </Button>

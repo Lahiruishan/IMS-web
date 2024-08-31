@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Button, Img, Heading, Slider, Text } from "../../components";
+import { Button, Slider } from "../../components";
 import Header1 from "../../components/Header1";
 import CommerceSection from "./CommerceSection";
 import ExploreCoursesSection from "./ExploreCoursesSection";
@@ -9,19 +9,17 @@ import OurTeachersSection from "./OurTeachersSection";
 import StatisticsSection from "./StatisticsSection";
 
 export default function HomePageNewPage() {
-  const [sliderState, setSliderState] = React.useState(0);
   const sliderRef = React.useRef(null);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 300000, // 5 min
-    beforeChange: (current, next) => setSliderState(next),
-  };
+  const items = [
+    <div key="1" className="flex flex-col items-center">
+      <img src="/images/0.jpg" alt="Image 1" className="w-full h-auto" />
+    </div>,
+    <div key="2" className="flex flex-col items-center">
+      <img src="/images/1.jpg" alt="Image 2" className="w-full h-auto" />
+    </div>,
+    // Add more slides if needed
+  ];
 
   return (
     <>
@@ -37,29 +35,21 @@ export default function HomePageNewPage() {
         <div className="flex flex-col flex-grow">
           <div className="relative mt-[42px] h-[496px] md:h-auto">
             <div className="relative mx-auto w-full">
-              <Slider {...settings} ref={sliderRef}>
-                <div className="flex flex-col items-center">
-                  <Img src="/images/image1.jpg" alt="Image 1" className="w-full h-auto" />
-                </div>
-                <div className="flex flex-col items-center">
-                  <Img src="/images/image2.jpg" alt="Image 2" className="w-full h-auto" />
-                </div>
-                {/* Add more slides if needed */}
-              </Slider>
+              <Slider items={items} ref={sliderRef} />
               <div className="absolute left-0 right-0 top-[36%] m-auto flex justify-between gap-5">
                 <Button
                   shape="square"
-                  onClick={() => sliderRef?.current?.slickPrev()}
+                  onClick={() => sliderRef?.current?.slidePrev()}
                   className="w-[48px] rotate-[-180deg]"
                 >
-                  <Img src="/images/img_slide_arrow_right.png" alt="" />
+                  {/* <img src="/images/img_slide_arrow_right.png" alt="Previous" /> */}
                 </Button>
                 <Button
                   shape="square"
-                  onClick={() => sliderRef?.current?.slickNext()}
+                  onClick={() => sliderRef?.current?.slideNext()}
                   className="w-[48px]"
                 >
-                  <Img src="/images/img_slide_arrow_right_44x48.png" alt="" />
+                  {/* <img src="/images/img_slide_arrow_right_44x48.png" alt="Next" /> */}
                 </Button>
               </div>
             </div>
