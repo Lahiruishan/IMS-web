@@ -1,23 +1,23 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Img, Text, Heading, Button } from "../../components";
-import IMA from "../../components/IMA";
+import { Img, Text, Heading, Button } from "../../../components";
+import IMA from "../../../components/IMA";
 import { useNavigate} from 'react-router-dom';
 
-export default function DashboardPage() {
+export default function TeacherDashboardPage() {
   const navigate = useNavigate();
 
   const handleProfile = () => {
     navigate('/RegistrationForm'); 
 };
   const handleLogout = () => {
-      navigate('/LoginPage'); 
+      navigate('/TeacherLoginPage'); 
   };
   const handleHome = () => {
-    navigate('/Dashboard'); 
+    navigate('/TeacherDashboard'); 
 };
 const handleStudentDetails = () => {
-  navigate('/StudentDetailsTwo')
+  navigate('/StudentDetails')
 };
 const handleTeachers = () => {
   navigate('/TeachersOne')
@@ -28,9 +28,9 @@ const handleTeachers = () => {
 const handleStudentTimeTable = () => {
   navigate('/StudentTimeTable'); 
 };  
-const handleWebsiteChange = () => {
-  navigate('/WebsiteChange'); 
-};
+// const handleWebsiteChange = () => {
+//   navigate('/WebsiteChange'); 
+// };
 
 
  
@@ -72,17 +72,17 @@ const handleWebsiteChange = () => {
                     Student Details
                   </Button>
                   <Button shape="square" className="w-full sm:px-5">
-                    Papers
+                    Learning Materials
                   </Button>
                   <Button shape="square" className="w-full sm:px-5" onClick={handleStudentTimeTable}>
                     TimeTable
                   </Button>
                   <Button shape="square" className="w-full sm:px-5" onClick={handlePayment}>
-                   Payments
+                   TeacherPayments
                   </Button>
-                  <Button shape="square" className="w-full sm:px-5" onClick={handleWebsiteChange}>
+                  {/* <Button shape="square" className="w-full sm:px-5" onClick={handleWebsiteChange}>
                   Website Changes
-                  </Button>
+                  </Button> */}
                  
                   <div className="h-[52px] mb-[408px] bg-indigo-100 shadow-bs" />
                 </div>

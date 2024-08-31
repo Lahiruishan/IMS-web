@@ -10,7 +10,10 @@ const Home = () => {
       </p>
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="LoginPage" style={{ color: "#87CEFA", textDecoration: "none" }}>LogInPage</Link>
+          <Link to="StudentLoginPage" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentLogInPage</Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="TeacherLoginPage" style={{ color: "#87CEFA", textDecoration: "none" }}>TeacherLogInPage</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
           <Link to="RegistrationFee" style={{ color: "#87CEFA", textDecoration: "none" }}>RegistrationFee</Link>
@@ -19,7 +22,10 @@ const Home = () => {
           <Link to="RegistrationForm" style={{ color: "#87CEFA", textDecoration: "none" }}>RegistrationForm</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="Dashboard" style={{ color: "#87CEFA", textDecoration: "none" }}>Dashboard</Link>
+          <Link to="StudentDashboard" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDashboard</Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="TeacherDashboard" style={{ color: "#87CEFA", textDecoration: "none" }}>TeacherDashboard</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
           <Link to="Payments" style={{ color: "#87CEFA", textDecoration: "none" }}>Payments</Link>
@@ -41,10 +47,10 @@ const Home = () => {
           <Link to="StudentDetailsTwo" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentDetailsTwo</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="TeachersOne" style={{ color: "#87CEFA", textDecoration: "none" }}>TeachersOne</Link>
+          <Link to="TeachersChange" style={{ color: "#87CEFA", textDecoration: "none" }}>TeachersChange</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
-          <Link to="TeachersTwo" style={{ color: "#87CEFA", textDecoration: "none" }}>TeachersTwo</Link>
+          <Link to="TeachersDetails" style={{ color: "#87CEFA", textDecoration: "none" }}>TeacherDetails</Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
           <Link to="WebsiteChange" style={{ color: "#87CEFA", textDecoration: "none" }}>WebsiteChange</Link>
@@ -70,6 +76,10 @@ const Home = () => {
 
         <li style={{ marginBottom: "10px" }}>
           <Link to="StudentLearningMaterials" style={{ color: "#87CEFA", textDecoration: "none" }}>StudentLearningMaterials</Link>
+        </li>
+
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="TeacherStudentsDetails" style={{ color: "#87CEFA", textDecoration: "none" }}>TeacherStudentsDetails</Link>
         </li>
       </ul>
     </div>

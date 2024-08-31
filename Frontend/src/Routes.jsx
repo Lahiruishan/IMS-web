@@ -1,26 +1,37 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
 import Home from "./pages/Home";
-import LoginPage from "./pages/Teacher/TeacherLoginPage";
-import Dashboard from "./pages/Student/StudentDashboard";
+// Admin
 import WebsiteChanges from "./pages/Admin/WebsiteChange";
 import Payments from "./pages/Admin/Payments"
 import PaymentsStudents from "./pages/Admin/PaymentsStudents"
 import PaymentsTeachers from "./pages/Admin/PaymentsTeachers";
 import StudentDetails from "./pages/Admin/StudentDetails";
-import StudentTimeTable from "./pages/Student/StudentTimeTable";
 import TeachersOne from "./pages/Admin/TeachersChange";
-import TeachersTwo from "./pages/Student/TeacherDetails";
 import WebsiteChange from "./pages/Admin/WebsiteChange";
 import WebsiteChangesHomePage from "./pages/Admin/WebsiteChangesHomePage";
 import WebsiteChangesContactUs from "./pages/Admin/WebsiteChangesContactUs";
 import WebsiteChangesTeachersPage from "./pages/Admin/WebsiteChangesTeachersPage";
 import WebsiteChangesTeachersPersonalPage from "./pages/Admin/WebsiteChangesTeachersPersonalPage";
 import WebsiteChangesTimetablePage from "./pages/Admin/WebsiteChangesTimetablePage";
+
+//Student
+import StudentDashboard from "./pages/Student/StudentDashboard";
+import StudentTimeTable from "./pages/Student/StudentTimeTable";
+import TeachersTwo from "./pages/Student/TeachersDetails";
 import RegistrationFee from "./pages/Student/StudentRegistrationFee";
 import RegistrationForm from "./pages/Student/RegistrationForm";
-import HomePageNewPage from "./pages/HomePageNew/index";
 import StudentLearningMaterials from "./pages/Student/StudentLearningMaterials/index";
+import StudentLoginPage from "pages/Student/StudentLoginPage";
+
+
+//Teacher
+import TeacherLoginPage from "./pages/Teacher/TeacherLoginPage";
+import TeacherDashboard from "./pages/Teacher/TeacherDashboard";
+import TeacherStudentDetails from "pages/Teacher/TeacherStudentsDetails";
+
+
+import HomePageNewPage from "./pages/HomePageNew/index";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -33,10 +44,14 @@ const ProjectRoutes = () => {
      }
      ,
      {
-      path: "LoginPage",
-     element:<LoginPage />,
+      path: "StudentLoginPage",
+     element:<StudentLoginPage />,
      }
      ,
+     {
+      path: "TeacherLoginPage",
+     element:<TeacherLoginPage />,
+     },
      {
       path: "RegistrationForm",
      element:<RegistrationForm />,
@@ -47,8 +62,12 @@ const ProjectRoutes = () => {
      },
 
     {
-      path: "Dashboard",
-      element: <Dashboard />,
+      path: "StudentDashboard",
+      element: <StudentDashboard />,
+    },
+    {
+      path: "TeacherDashboard",
+      element: <TeacherDashboard />,
     },
     {
       path: "WebsiteChanges",
@@ -111,6 +130,11 @@ const ProjectRoutes = () => {
     {
       path:"WebsiteChangesTimetablePage",
       element:<WebsiteChangesTimetablePage/>
+    }
+    ,
+    {
+      path:"TeacherStudentDetails",
+      element:<TeacherStudentDetails/>
     }
     
 

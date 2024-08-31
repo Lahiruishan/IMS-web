@@ -4,7 +4,7 @@ import { Heading, Button, Text } from "../../../components";
 import IMA from "../../../components/IMA";
 
 
-export default function TeachersOne() {
+export default function TeachersChange() {
   return (
     <>
       <Helmet>

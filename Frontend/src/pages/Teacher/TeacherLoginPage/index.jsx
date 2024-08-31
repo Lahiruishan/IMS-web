@@ -5,11 +5,11 @@ import { useNavigate} from 'react-router-dom';
 
 
 
-export default function LoginPage() {
+export default function TeacherLoginPage() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-      navigate('/dashboard'); 
+      navigate('/Teacherdashboard'); 
   };
 
   const handleRegister = () => {
@@ -40,7 +40,7 @@ export default function LoginPage() {
 <div className="flex flex-1 flex-col items-center justify-center rounded-[10px] bg-blue_gray-100 px-14 pb-[151px] pt-[68px] shadow-xs md:self-stretch md:p-5">
 <div className="flex w-[88%] flex-col items-start gap-[47px] md:w-full">
   <Text size="10xl" as="p" className="! font-actor underline">
-    Login to your Account
+    Login To Your Account As A Teacher
   </Text>
   {/* Login form */}
   <form action="" class="px-10">

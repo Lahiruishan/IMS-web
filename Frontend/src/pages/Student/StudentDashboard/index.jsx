@@ -4,7 +4,7 @@ import { Img, Text, Heading, Button } from "../../../components";
 import IMA from "../../../components/IMA";
 import { useNavigate} from 'react-router-dom';
 
-export default function DashboardPage() {
+export default function StudentDashboard() {
   const navigate = useNavigate();
 
   const handleProfile = () => {
@@ -14,7 +14,7 @@ export default function DashboardPage() {
       navigate('/LoginPage'); 
   };
   const handleHome = () => {
-    navigate('/Dashboard'); 
+    navigate('/StudentDashboardPage'); 
 };
 const handleTeachers = () => {
   navigate('/TeachersOne')
@@ -23,7 +23,7 @@ const handleStudentLearingMaterials = () => {
   navigate('/StudentLearingMaterials')
 };
   const handlePayment = () => {
-    navigate('/Payments'); 
+    navigate('/PaymentsStudents'); 
 };
 const handleStudentTimeTable = () => {
   navigate('/StudentTimeTable'); 
