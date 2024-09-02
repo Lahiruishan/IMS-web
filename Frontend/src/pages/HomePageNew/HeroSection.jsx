@@ -1,7 +1,13 @@
 import {Img,Button,Text} from "../../components";
 import React from "react";
+import { useNavigate} from 'react-router-dom';
 
 export default function HeroSection(){
+
+    const navigate = useNavigate();
+    const handleRegister = () => {
+        navigate('/registrationForm'); 
+    };
     return(
         <>
         {/* Hero Section */}
@@ -37,7 +43,7 @@ export default function HeroSection(){
                     color="indigo_A400"
                     size="sm"
                     className="ml-[26px] min-w-[244px] rounded-[20px] font-abhayalibreextrabold font-extrabold md:ml-0"
-                    > Register Here</Button>
+                 onClick={handleRegister} > Register Here </Button>
                 </div>
             </div>
             <div className="flex flex-1 items-center justify-end md:self-stretch sm:flex-col">

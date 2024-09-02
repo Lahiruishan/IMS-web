@@ -1,7 +1,14 @@
 import React from "react";
 import { Button, Heading1 } from "..";
+import { useNavigate} from 'react-router-dom'; 
 
 export default function Header1({ ...props }) {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+      navigate('/StudentLoginPage'); 
+  };
+
   return (
     <header
       {...props}
@@ -69,7 +76,7 @@ export default function Header1({ ...props }) {
             </a>
           </li>
         </ul>
-        <Button shape="round" className="ml-5 min-w-[96px] font-bold md:ml-0">
+        <Button shape="round" className="ml-5 min-w-[96px] font-bold md:ml-0" onClick={handleLogin}>
           Sign In
         </Button>
       </div>
