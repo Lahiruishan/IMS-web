@@ -3,7 +3,7 @@ import React from "react";
 
 export default function UserProfile1({
     userTitle = "Combined Maths",
-    userSubtitle = "Combined Maths",
+    userSubtitle = "Combined Maths pure and applied",
     userdescription1=(
         <>
         Chathuranga Dharmadasa 

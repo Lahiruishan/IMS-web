@@ -67,18 +67,18 @@ export default function OurTeachersSection() {
                 <div className="flex flex-col gap-[34px]">
                     <div className="ml-11 flex flex-col items-start gap-[42px] md:ml-0">
                         <Heading 
-                            size="headingxl" 
+                            size="xl" 
                             as="h6" 
-                            className="ml-[426px] !font-abhayalibreextrabold !text-indigo-a700 md:ml-0"
+                            className="ml-[466px] !font-aclonica  !text-indigo-700 md:ml-0"
                         >
                             Our Teachers
                         </Heading>
                         <div className="relative h-[78px] self-stretch">
                             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[58px] flex-1 bg-indigo-50" />
                             <Text 
-                                size="text4xl" 
+                                size="5xl" 
                                 as="p" 
-                                className="absolute bottom-0 left-[3%] top-0 my-auto h-max !font-koulen !text-blue-900 underline"
+                                className="absolute bottom-0 left-[3%] top-0 my-auto h-max !font-aclonica !text-blue-900 underline"
                             > 
                                 SCIENCE
                             </Text>

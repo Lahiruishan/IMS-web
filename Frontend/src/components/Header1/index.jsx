@@ -12,7 +12,7 @@ export default function Header1({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} flex justify-between items-center px-4 py-[18px] bg-blue-700`}
+      className={`${props.className} flex justify-between items-center px-4 py-[18px] bg-indigo-300`}
     >
       {/* Left side: Logo */}
       <div className="flex items-center">

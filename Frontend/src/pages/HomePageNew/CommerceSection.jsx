@@ -48,9 +48,9 @@ export default function CommerceSection() {
           <div className="relative ml-11 h-[78px] md:ml-0">
             <div className="absolute left-0 right-0 top-[4.61px] m-auto h-[58px] flex-1 bg-indigo-50" />
             <Text
-              size="text4xl"
+              size="5xl"
               as="p"
-              className="absolute bottom-0 left-[4%] top-0 my-auto h-max !font-koulen !text-green-500 underline"
+              className="absolute bottom-0 left-[4%] top-0 my-auto h-max !font-aclonica !text-green-500 underline"
             >
               Commerce
             </Text>

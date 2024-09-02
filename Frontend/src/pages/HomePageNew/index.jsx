@@ -42,14 +42,12 @@ export default function HomePageNewPage() {
                   onClick={() => sliderRef?.current?.slidePrev()}
                   className="w-[48px] rotate-[-180deg]"
                 >
-                  {/* <img src="/images/img_slide_arrow_right.png" alt="Previous" /> */}
                 </Button>
                 <Button
                   shape="square"
                   onClick={() => sliderRef?.current?.slideNext()}
                   className="w-[48px]"
                 >
-                  {/* <img src="/images/img_slide_arrow_right_44x48.png" alt="Next" /> */}
                 </Button>
               </div>
             </div>
