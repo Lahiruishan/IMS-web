@@ -7,7 +7,7 @@ import Payments from "./pages/Admin/Payments"
 import PaymentsStudents from "./pages/Admin/PaymentsStudents"
 import PaymentsTeachers from "./pages/Admin/PaymentsTeachers";
 import StudentDetails from "./pages/Admin/StudentDetails";
-import TeachersOne from "./pages/Admin/TeachersChange";
+import TeachersDetails from "./pages/Admin/TeachersChange";
 import WebsiteChange from "./pages/Admin/WebsiteChange";
 import WebsiteChangesHomePage from "./pages/Admin/WebsiteChangesHomePage";
 import WebsiteChangesContactUs from "./pages/Admin/WebsiteChangesContactUs";
@@ -21,7 +21,7 @@ import StudentTimeTable from "./pages/Student/StudentTimeTable";
 import TeachersTwo from "./pages/Student/TeachersDetails";
 import RegistrationFee from "./pages/Student/StudentRegistrationFee";
 import RegistrationForm from "./pages/Student/RegistrationForm";
-import StudentLearningMaterials from "./pages/Student/StudentLearningMaterials/index";
+import StudentLearningMaterials from "./pages/Student/StudentLearningMaterials";
 import StudentLoginPage from "pages/Student/StudentLoginPage";
 
 
@@ -100,8 +100,8 @@ const ProjectRoutes = () => {
     }
     ,
     {
-      path:"TeachersOne",
-      element:<TeachersOne/>
+      path:"TeachersDetails",
+      element:<TeachersDetails/>
     },
     {
       path:"TeachersTwo",

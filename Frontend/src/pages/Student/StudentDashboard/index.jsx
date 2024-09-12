@@ -17,10 +17,10 @@ export default function StudentDashboard() {
     navigate('/StudentDashboardPage'); 
 };
 const handleTeachers = () => {
-  navigate('/TeachersOne')
+  navigate('/TeachersDetails')
 };
 const handleStudentLearingMaterials = () => {
-  navigate('/StudentLearingMaterials')
+  navigate('/StudentLearningMaterials')
 };
   const handlePayment = () => {
     navigate('/PaymentsStudents'); 

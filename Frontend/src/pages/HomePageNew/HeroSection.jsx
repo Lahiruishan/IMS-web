@@ -52,7 +52,7 @@ export default function HeroSection(){
                     <div className="flex w-full flex-col items-start">
                         <div className="relative h-[398px] self-stretch">
                             <div className="absolute right-[12%] top-[25px] m-auto h-[288px] w-[64%] rounded-[154px] bg-indigo-50 blur-[4.00pc] backdrop-opacity-[0.5]" />
-                            <div className="absolute left-[30px] top-0 m-auto h-[256px] w-[52%] rounded-[134px] border-[1.5px] border-solid border-blue_gray-400_01 bg-gray-50 blur-[4.00px] backdrop-opacity-[0.5]" />
+                            {/* <div className="absolute left-[30px] top-0 m-auto h-[256px] w-[52%] rounded-[134px] border-[1.5px] border-solid border-blue_gray-400_01 bg-gray-50 blur-[4.00px] backdrop-opacity-[0.5]" /> */}
                             <div className="absolute bottom-0 left-[13%] m-auto h-[226px] w-[52%] rounded-[124px] border border-solid border-indigo-a400 bg-indigo-a400 blur-[4.00px] backdrop-opacity-[0.5]"/>
                             {/* <Img
                             src="images" alt="" 

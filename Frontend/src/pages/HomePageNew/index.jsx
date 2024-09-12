@@ -18,7 +18,6 @@ export default function HomePageNewPage() {
     <div key="2" className="flex flex-col items-center">
       <img src="/images/1.jpg" alt="Image 2" className="w-full h-auto" />
     </div>,
-    // Add more slides if needed
   ];
 
   return (
@@ -30,7 +29,8 @@ export default function HomePageNewPage() {
           content="Discover our online education platform offering a variety of courses in Biological Science, Physical Science, and Commerce."
         />
       </Helmet>
-      <div className="min-h-screen flex flex-col w-full bg-blue_gray-100">
+      {/* Applying the same background style as payment/index.jsx */}
+      <div className="min-h-screen flex flex-col w-full bg-gradient-to-r from-blue-300 to-green-300">
         <Header1 className="w-full bg-indigo-900" />
         <div className="flex flex-col flex-grow">
           <div className="relative mt-[42px] h-[496px] md:h-auto">
