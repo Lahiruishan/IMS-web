@@ -2,14 +2,14 @@ import {Heading,Text,Img} from "./..";
 import React from "react";
 
 export default function UserProfile1({
-    userTitle = "Combined Maths",
-    userSubtitle = "Combined Maths pure and applied",
+    userTitle = "Economics",
+    userSubtitle = "",
     userdescription1=(
         <>
-        Chathuranga Dharmadasa 
+        {/* Chathuranga Dharmadasa 
         <br />
         B.Sc[Hons].Chem(University of Jaffna)
-        </>
+        </> */}</> 
     ),
     userdescription2=(
         <>
@@ -24,7 +24,7 @@ export default function UserProfile1({
     return (
         <div {...props} className={`${props.className} h-[290px] w-[32%] md:w-full relative`}>
             <Img 
-            src="images/img_reactangle_209.png"
+            src="images/1.jpg"
             alt="Combined Maths"
             className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[290px] flex-1 rounded-[20px] object-cover"/>
            
@@ -35,7 +35,7 @@ export default function UserProfile1({
                         <Text size="text6xl" as="p" className="ml-1.5 !font-abel !text-black-900">
                             {userTitle}
                         </Text>
-                        <div className="relative mt-[-26px] h-[28px] w-[64%] rounded-[14px] bg-white-a700"/>
+                        <div className="relative mt-[-26px] h-[28px] w-[64%] rounded-[14px] bg-white-a900"/>
                         </div>
                         <Text size="text6xl" as="p" className="absolute bottom-px left-0 m-auto !font-abel !text-black-900">
                             {userSubtitle}

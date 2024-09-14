@@ -2,11 +2,13 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Button, Slider } from "../../components";
 import Header1 from "../../components/Header1";
-import CommerceSection from "./CommerceSection";
+import CommerceSection from "./OurTechersCommerceSection";
 import ExploreCoursesSection from "./ExploreCoursesSection";
 import HeroSection from "./HeroSection";
-import OurTeachersSection from "./OurTeachersSection";
+import OurTeachersSection from "./OurTeachersScienceSection";
 import StatisticsSection from "./StatisticsSection";
+import ArtSection from "./OurTechersArtSection ";
+
 
 export default function HomePageNewPage() {
   const sliderRef = React.useRef(null);
@@ -59,6 +61,7 @@ export default function HomePageNewPage() {
             <ExploreCoursesSection />
             <OurTeachersSection />
             <CommerceSection />
+            <sArtSection/>
           </div>
         </div>
       </div>

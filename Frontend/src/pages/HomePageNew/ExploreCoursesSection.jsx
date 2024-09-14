@@ -39,8 +39,8 @@ export default function ExploreCoursesSection() {
     return (
         <>
             {/* explore courses section */}
-            <div className="mt-[102px] flex-col items-center gap-[72px] px-14 md:gap-[54px] md:px-5 sm:gap-9">
-                <Heading size="headingxl" as="h4" className="!font-abhayalibreextrabold !text-indigo-a700">
+            <div className="mt-[150px] flex-col items-center gap-[78px] px-16 md:gap-[64px] md:px-6 sm:gap-10">
+                <Heading size="headingxl" as="h4" className="!font-aclonica !text-indigo-a700">
                     Explore Courses by Category.
                 </Heading>
                 <div className="flex w-[96%] flex-col items-end md:w-full">
