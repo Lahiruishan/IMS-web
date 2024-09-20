@@ -17,7 +17,7 @@ export default function StudentDashboard() {
     navigate('/StudentDashboardPage'); 
 };
 const handleTeachers = () => {
-  navigate('/TeachersDetails')
+  navigate('/StudentTeachersDetails')
 };
 const handleStudentLearingMaterials = () => {
   navigate('/StudentLearningMaterials')

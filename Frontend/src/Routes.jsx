@@ -18,7 +18,7 @@ import WebsiteChangesTimetablePage from "./pages/Admin/WebsiteChangesTimetablePa
 //Student
 import StudentDashboard from "./pages/Student/StudentDashboard";
 import StudentTimeTable from "./pages/Student/StudentTimeTable";
-import TeachersTwo from "./pages/Student/TeachersDetails";
+import StudentTeachersDetails from "./pages/Student/StudentTeachersDetails";
 import RegistrationFee from "./pages/Student/StudentRegistrationFee";
 import RegistrationForm from "./pages/Student/RegistrationForm";
 import StudentLearningMaterials from "./pages/Student/StudentLearningMaterials";
@@ -104,8 +104,8 @@ const ProjectRoutes = () => {
       element:<TeachersDetails/>
     },
     {
-      path:"TeachersTwo",
-      element:<TeachersTwo/>
+      path:"StudentTeachersDetails",
+      element:<StudentTeachersDetails/>
     },
     {
       path:"WebsiteChange",
