@@ -9,7 +9,7 @@ export default function RegistrationFee() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-      navigate('/LoginPage'); 
+      navigate('/StudentLoginPage'); 
   };
   return (
     <>

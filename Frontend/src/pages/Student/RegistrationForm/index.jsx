@@ -140,7 +140,7 @@ export default function RegistrationForm() {
   };
 
   const handleLogin = () => {
-    navigate("/LoginPage");
+    navigate("/StudentLoginPage");
   };
 
   return (

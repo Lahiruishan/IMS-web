@@ -36,7 +36,7 @@ import HomePageNewPage from "./pages/HomePageNew/index";
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/",
-     element: <Home /> }
+     element: <HomePageNewPage  /> }
      ,
      {
       path: "HomePageNewPage",
