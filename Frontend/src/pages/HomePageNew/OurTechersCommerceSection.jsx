@@ -4,15 +4,15 @@ import React from "react";
 
 const tutorProfileList = [
     {
-        userTitle: "Bussiness Studiess",
+        userTitle: "Business Studies",
         userdescription1: (
             <>
                 Palitha Chathuranga 
                 <br />
-                B.Sc.Bussiness.Mg.(UOJ)
+                B.Sc.Business.Mg.(UOJ)
             </>
         ),
-        userImage: "images/1.jpg" // Add specific images if needed
+        userImage: "images/1.jpg"
     },
     {
         userTitle: "Economics",
@@ -58,30 +58,37 @@ export default function OurTeachersCommerceSection() {
                         <Heading 
                             size="xl" 
                             as="h6" 
-                            className="ml-[466px] ! font-serif !text-indigo-700 md:ml-0 underline"
+                            className="ml-[466px] !font-serif !text-indigo-700 md:ml-0 underline"
                         >
-                           
+                            {/* Title can be added here if needed */}
                         </Heading>
                         <div className="relative h-[78px] self-stretch">
                             <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[58px] flex-1 bg-indigo-50" />
                             <Text 
                                 size="5xl" 
                                 as="p" 
-                                className="absolute bottom-0 left-[3%] top-0 my-auto h-max ! font-serif !text-blue-900 underline"
+                                className="absolute bottom-0 left-[3%] top-0 my-auto h-max !font-serif !text-blue-900 underline"
                             >
                                 COMMERCE
                             </Text>
                         </div>
                     </div>
 
-                    {/* Render the profiles in a 4-column layout */}
+                    {/* Render the profiles in a 4-column layout with animations */}
                     <div className="ml-[74px] mr-[66px] flex flex-wrap justify-center gap-6 md:mx-0">
                         {tutorProfileList.map((d, index) => (
-                            <UserProfile 
-                                {...d} 
-                                key={"teachersList" + index} 
-                                className="mb-2 w-[24%] md:w-full" // Adjust the width for 4 columns
-                            />
+                            <div
+                                key={"teachersList" + index}
+                                className="mb-2 w-[24%] md:w-full cursor-pointer transition-transform duration-500 ease-out transform hover:scale-105 hover:shadow-lg hover:-translate-y-1"
+                                style={{ perspective: "1000px" }} // Enhance 3D effect
+                            >
+                                <div className="transition-transform duration-300 transform-gpu hover:rotate-x-2 hover:rotate-y-3">
+                                    <UserProfile 
+                                        {...d}
+                                        className="transition-all duration-500 ease-out"
+                                    />
+                                </div>
+                            </div>
                         ))}
                     </div>
                 </div>

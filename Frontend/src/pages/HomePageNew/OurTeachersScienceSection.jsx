@@ -12,7 +12,7 @@ const tutorProfileList = [
                 B.Sc.Phy.(UOJ)
             </>
         ),
-        userImage: "images/1.jpg" // Add specific images if needed
+        userImage: "images/1.jpg"
     },
     {
         userTitle: "Physics",
@@ -58,7 +58,7 @@ export default function OurTeachersScienceSection() {
                         <Heading 
                             size="xl" 
                             as="h6" 
-                            className="ml-[466px] ! font-serif !text-indigo-700 md:ml-0 underline"
+                            className="ml-[466px] !font-serif !text-indigo-700 md:ml-0 underline"
                         >
                             Our Teachers
                         </Heading>
@@ -67,21 +67,31 @@ export default function OurTeachersScienceSection() {
                             <Text 
                                 size="5xl" 
                                 as="p" 
-                                className="absolute bottom-0 left-[3%] top-0 my-auto h-max ! font-serif !text-blue-900 underline"
+                                className="absolute bottom-0 left-[3%] top-0 my-auto h-max !font-serif !text-blue-900 underline"
                             >
                                 SCIENCE
                             </Text>
                         </div>
                     </div>
 
-                    {/* Render the profiles in a 4-column layout */}
-                    <div className="ml-[74px] mr-[66px] flex flex-wrap justify-center gap-6 md:mx-0  ">
+                    {/* Render the profiles in a 4-column layout with 3D hover effect */}
+                    <div className="ml-[74px] mr-[66px] flex flex-wrap justify-center gap-6 md:mx-0 font-serif">
                         {tutorProfileList.map((d, index) => (
-                            <UserProfile 
-                                {...d} 
-                                key={"teachersList" + index} 
-                                className="mb-2 w-[24%] md:w-full  " // Adjust the width for 4 columns
-                            />
+                            <div
+                                key={"teachersList" + index}
+                                className="mb-2 w-[24%] md:w-full cursor-pointer transition-all duration-500 ease-out transform hover:scale-105 hover:shadow-2xl hover:rotate-1 hover:translate-y-[-5px]"
+                                style={{ perspective: "1000px" }} // To enhance 3D effect
+                            >
+                                {/* Inner card animation */}
+                                <div className="transition-transform duration-300 transform-gpu hover:rotate-y-6 hover:rotate-x-2 hover:scale-105">
+                                    <UserProfile 
+                                        {...d}
+                                        className="transition-all duration-500 ease-out font-serif" // Ensure font-serif applies here
+                                        titleClassName="font-serif" // Add className for title
+                                        descriptionClassName="font-serif" // Add className for description
+                                    />
+                                </div>
+                            </div>
                         ))}
                     </div>
                 </div>

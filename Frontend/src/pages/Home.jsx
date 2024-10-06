@@ -81,6 +81,10 @@ const Home = () => {
         <li style={{ marginBottom: "10px" }}>
           <Link to="TeacherStudentsDetails" style={{ color: "#87CEFA", textDecoration: "none" }}>TeacherStudentsDetails</Link>
         </li>
+
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="AdminDashboard" style={{ color: "#87CEFA", textDecoration: "none" }}>AdminDashboard</Link>
+        </li>
       </ul>
     </div>
   );

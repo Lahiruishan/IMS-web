@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Img, Text, Heading, Button } from "../../../components";
 import IMA from "../../../components/IMA";
@@ -6,25 +6,33 @@ import { useNavigate } from 'react-router-dom';
 import Calendar from 'react-calendar'; 
 import 'react-calendar/dist/Calendar.css'; 
 
-export default function TeacherDashboard() {
+export default function AdminDashboard() {
   const navigate = useNavigate();
   const [date, setDate] = useState(new Date()); 
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState([
+    { date: '10th Feb', time: '08:00 AM', eventName: '2025 First Theory Class' }
+  ]); // Initial event
 
-  // Simulate fetching events from a backend or API
-  useEffect(() => {
-    // Example of fetching events (replace with actual API call)
-    const fetchEvents = () => {
-      const mockEvents = [
-        { date: '10th Feb', time: '08:00 AM', eventName: '2025 First Theory Class' },
-        { date: '15th Mar', time: '10:00 AM', eventName: 'Second Lecture' },
-        { date: '20th Apr', time: '12:00 PM', eventName: 'Practical Lab Session' },
-      ];
-      setEvents(mockEvents); // Set the fetched events
-    };
+  const [newEvent, setNewEvent] = useState({ date: '', time: '', eventName: '' });
 
-    fetchEvents();
-  }, []);
+  // Handle event form input change
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setNewEvent({ ...newEvent, [name]: value });
+  };
+
+  // Add new event
+  const addEvent = (e) => {
+    e.preventDefault();
+    setEvents([...events, newEvent]);
+    setNewEvent({ date: '', time: '', eventName: '' }); // Reset form
+  };
+
+  // Remove an event
+  const removeEvent = (index) => {
+    const updatedEvents = events.filter((_, i) => i !== index);
+    setEvents(updatedEvents);
+  };
 
   const handleProfile = () => {
     navigate('/RegistrationForm'); 
@@ -59,7 +67,6 @@ export default function TeacherDashboard() {
           <IMA className="flex md:flex-col justify-between items-start gap-5 bg-indigo-900" />
           <div className="flex md:flex-col justify-center items-start gap-[49px]">
             <div className="h-[825px] w-[17%] md:w-full md:h-auto md:p-5 relative">
-              <div className="flex flex-col items-center mt-[65px] ml-[41px] gap-[25px] md:ml-0"></div>
               <div className="w-full h-max left-0 bottom-0 right-0 top-0 m-auto absolute">
                 <div>
                   <Button shape="square" className="w-full sm:px-5 z-[1] border-black-900 border border-solid" onClick={handleHome}>
@@ -80,15 +87,15 @@ export default function TeacherDashboard() {
                   <Button shape="square" className="w-full sm:px-5" onClick={handlePayment}>
                     Payments
                   </Button>
-                  <div className="h-[52px] mb-[408px] bg-indigo-100 shadow-bs" />
                 </div>
               </div>
             </div>
 
+            {/* Main content area */}
             <div className="flex flex-col items-end md:self-stretch mt-[3px] gap-5 md:p-5 flex-1">
               <div className="flex sm:flex-col justify-between items-center w-[79%] md:w-full gap-5">
                 <Button size="2xl" as="h3" className="self-end mb-2.5 !text-blue_gray-900">
-                  Upcoming Events
+                  Manage Upcoming Events
                 </Button>
                 <div className="flex flex-col">
                   <Button as="p" className="flex justify-center items-center h-[35px] pt-[5px] pb-px px-7 sm:px-5 border-black-900 border border-solid bg-blue_gray-100" onClick={handleProfile}>
@@ -105,9 +112,20 @@ export default function TeacherDashboard() {
 
               <div className="flex md:flex-col self-stretch justify-end items-center mr-[13px] gap-[49px] md:mr-0">
                 <div className="flex flex-col md:self-stretch gap-8 flex-1">
-                  {/* Display Events Dynamically */}
+                  {/* Event Form */}
+                  <form className="flex flex-col gap-5 bg-indigo-A200 shadow-xs rounded-[15px] p-5" onSubmit={addEvent}>
+                    <Heading size="lg" as="h4" className="!text-white-A700">
+                      Add New Event
+                    </Heading>
+                    <input type="text" name="date" value={newEvent.date} onChange={handleInputChange} placeholder="Event Date" required />
+                    <input type="text" name="time" value={newEvent.time} onChange={handleInputChange} placeholder="Event Time" required />
+                    <input type="text" name="eventName" value={newEvent.eventName} onChange={handleInputChange} placeholder="Event Name" required />
+                    <Button type="submit">Add Event</Button>
+                  </form>
+
+                  {/* Events List */}
                   {events.map((event, index) => (
-                    <div key={index} className="flex sm:flex-col justify-between items-start gap-5 p-1.5 bg-blue-200 shadow-xs rounded-[15px]">
+                    <div key={index} className="flex justify-between items-start gap-5 p-1.5 bg-blue-200 shadow-xs rounded-[15px]">
                       <div className="flex justify-between w-[44%] sm:w-full mb-[5px] ml-[19px] gap-5 md:ml-0 flex-wrap">
                         <Text size="s" as="p">
                           {event.date}
@@ -119,6 +137,7 @@ export default function TeacherDashboard() {
                       <Text size="xs" as="p" className="mr-56 md:mr-0">
                         {event.eventName}
                       </Text>
+                      <Button onClick={() => removeEvent(index)}>Remove</Button>
                     </div>
                   ))}
                 </div>

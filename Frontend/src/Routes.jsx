@@ -2,9 +2,10 @@ import React from "react";
 import { useRoutes } from "react-router-dom";
 import Home from "./pages/Home";
 // Admin
-import WebsiteChanges from "./pages/Admin/WebsiteChange";
-import Payments from "./pages/Admin/Payments"
-import PaymentsStudents from "./pages/Admin/PaymentsStudents"
+import AdminDashboard from "./pages/Admin/AdminDashboard";
+import WebsiteChanges from "./pages/Admin/WebsiteChange"
+import Payments from "./pages/Admin/Payments";
+import PaymentsStudents from "./pages/Admin/PaymentsStudents";
 import PaymentsTeachers from "./pages/Admin/PaymentsTeachers";
 import StudentDetails from "./pages/Admin/StudentDetails";
 import TeachersDetails from "./pages/Admin/TeachersChange";
@@ -135,6 +136,11 @@ const ProjectRoutes = () => {
     {
       path:"TeacherStudentDetails",
       element:<TeacherStudentDetails/>
+    }
+    ,
+    {
+      path:"AdminDashboard",
+      element:<AdminDashboard/>
     }
     
 
