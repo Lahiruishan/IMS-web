@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 import { Img, Text, Heading, Button } from "../../../components";
 import IMA from "../../../components/IMA";
 import { useNavigate } from 'react-router-dom';
-import Calendar from 'react-calendar'; 
-import 'react-calendar/dist/Calendar.css'; 
+//import Calendar from 'react-calendar'; 
+//import 'react-calendar/dist/Calendar.css'; 
+import Calendar from "components/calender/calFunctions";
 
 export default function AdminDashboard() {
   const navigate = useNavigate();
@@ -143,9 +144,9 @@ export default function AdminDashboard() {
                 </div>
 
                 {/* Calendar */}
-                <div className="w-[25%] md:w-full object-cover">
-                  <Calendar onChange={setDate} value={date} />
-                </div>
+                {<div className="bg-white p-1 rounded-lg shadow-md" style={{ backgroundColor: 'white',height: '53vh' }}>
+                  <Calendar/>
+                </div>}
               </div>
             </div>
           </div>
