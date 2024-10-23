@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Img, Text, Heading, Button } from "../../../components";
+import { Text,  Button } from "../../../components";
 import IMA from "../../../components/IMA";
 import { useNavigate } from 'react-router-dom';
 //import Calendar from 'react-calendar'; 

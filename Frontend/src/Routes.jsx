@@ -1,6 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+
 // Admin
 import AdminDashboard from "./pages/Admin/AdminDashboard";
 import WebsiteChanges from "./pages/Admin/WebsiteChange"
@@ -30,6 +31,7 @@ import StudentLoginPage from "pages/Student/StudentLoginPage";
 import TeacherLoginPage from "./pages/Teacher/TeacherLoginPage";
 import TeacherDashboard from "./pages/Teacher/TeacherDashboard";
 import TeacherStudentDetails from "pages/Teacher/TeacherStudentsDetails";
+import TeacherTimeTable from "./pages/Teacher/TeacherTimeTable";
 
 
 import HomePageNewPage from "./pages/HomePageNew/index";
@@ -142,7 +144,12 @@ const ProjectRoutes = () => {
       path:"AdminDashboard",
       element:<AdminDashboard/>
     }
-    
+    ,
+    { 
+      path:"TeacherTimeTable",
+      element:<TeacherTimeTable/>
+
+    }
 
   ]);
 
