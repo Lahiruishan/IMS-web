@@ -53,13 +53,18 @@ export default function RegistrationForm() {
     }
 
     // Validate mobile numbers
-    const mobileRegex = /^\+94\d{9}$/;
-    if (!mobileRegex.test(studentMobile) || !mobileRegex.test(parentMobile)) {
-      setMobileError("Mobile number must start with +94 and be followed by 9 digits.");
-      return;
-    } else {
-      setMobileError('');
-    }
+    const mobileRegex = /^0\d{9}$/; // Correct regex
+if (!mobileRegex.test(studentMobile)) {
+  setMobileError("Student's mobile number must start with 0 and be followed by 9 digits.");
+  return;
+} 
+if (!mobileRegex.test(parentMobile)) {
+  setMobileError("Parent's mobile number must start with 0 and be followed by 9 digits.");
+  return;
+} 
+
+setMobileError(''); // Clear error if both are valid
+
 
     // Validate gender selection
     if (!gender) {
@@ -279,7 +284,7 @@ export default function RegistrationForm() {
       id="student-mobile"
       value={studentMobile}
       onChange={(e) => setStudentMobile(e.target.value)}
-      placeholder="Mobile Number (+94xxxxxxxxx)"
+      placeholder="Mobile Number (0xx xxxxxxx)"
       className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none"
     />
     {mobileError && <span className="text-red-500 text-sm">{mobileError}</span>}
@@ -310,7 +315,7 @@ export default function RegistrationForm() {
       id="parent-mobile"
       value={parentMobile}
       onChange={(e) => setParentMobile(e.target.value)}
-      placeholder="Mobile Number (+94xxxxxxxxx)"
+      placeholder="Mobile Number (0xx xxxxxxx)"
       className="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none"
     />
   </div>
