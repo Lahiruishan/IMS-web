@@ -59,7 +59,7 @@ export default function StudentDashboard() {
             <Button shape="square" className="w-full sm:px-5 border border-solid border-black-900" onClick={handleHome}>
               Home
             </Button>
-            <div className="mt-4 flex flex-col gap-4 bg-indigo-300 p-3 rounded-lg shadow-md">
+            <div className="mt-4 flex flex-col gap-4 bg-indigo-400 p-3 rounded-lg shadow-md">
               <Button shape="square" className="w-full sm:px-5" onClick={handleTeachers}>
                 Teachers
               </Button>
@@ -82,13 +82,13 @@ export default function StudentDashboard() {
                 Upcoming Events
               </Button>
               <div className="flex gap-3">
-                <Button as="p" className="h-[35px] px-5 border border-black-900 bg-blue_gray-100" onClick={handleProfile}>
+                <Button as="p" className="h-[35px] px-5 border border-black-900 bg-blue_gray-200" onClick={handleProfile}>
                   My Profile
                 </Button>
-                <Button as="p" className="h-[35px] px-5 border border-black-900 bg-blue_gray-100">
+                <Button as="p" className="h-[35px] px-5 border border-black-900 bg-blue_gray-200">
                   Settings
                 </Button>
-                <Button as="p" className="h-[35px] px-5 border border-black-900 bg-blue_gray-100" onClick={handleLogout}>
+                <Button as="p" className="h-[35px] px-5 border border-black-900 bg-blue_gray-200" onClick={handleLogout}>
                   Logout
                 </Button>
               </div>
@@ -98,7 +98,7 @@ export default function StudentDashboard() {
               {/* Events List */}
               <div className="flex-1 flex flex-col gap-6">
                 {events.map((event, index) => (
-                  <div key={index} className="flex flex-wrap justify-between items-center p-3 bg-blue-200 rounded-lg shadow-xs gap-4">
+                  <div key={index} className="flex flex-wrap justify-between items-center p-3 bg-blue-400 rounded-lg shadow-xs gap-4">
                     <div className="flex gap-5">
                       <Text size="s" as="p">
                         {event.date}
