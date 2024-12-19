@@ -1,6 +1,6 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
- //import Home from "./pages/Home";
+ import Home from "./pages/Home";
 
 // Admin
 import AdminDashboard from "./pages/Admin/AdminDashboard";
@@ -39,7 +39,7 @@ import HomePageNewPage from "./pages/HomePageNew/index";
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/",
-     element: < HomePageNewPage/> }
+     element: < Home /> }
      ,
      {
       path: "HomePageNewPage",

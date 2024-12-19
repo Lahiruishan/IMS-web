@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import {Helmet} from "react-helmet";
 import {  Text,Button } from "../../../components";
-import { useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 
 
 export default function StudentLoginPage() {
   const navigate = useNavigate();
+  const [details,setDetails]=useState({email:'',password:''})
 
   const handleLogin = () => {
       navigate('/StudentDashboard'); 
@@ -47,7 +48,7 @@ export default function StudentLoginPage() {
 {/* Username field */}
   <div className="ml-6 flex flex-col items-start self-stretch md:ml-0">
   <label for="" class="text-neutral-1900 text-base font-normal ">User Name :</label>
-  <input type="text" name="" placeholder="Enter your Email Address " id=""
+  <input type="text" name="email" placeholder="Enter your Email Address " id=""
   class="w-full text-neutral-600 placeholder:text-neutral-600 px-4 bg-transparent outline-none" />
 
   <div className="mt-4 h-[42px] self-stretch rounded-[15px] bg-blue_gray-100"/>
